@@ -5,8 +5,8 @@
 		"main.scss"
 	],
 	"sourcesContent": [
-		"body {background: red;}"
+		"// body {background: red;}"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,IAAI,AAAC,CAAC,UAAU,CAAE,GAAG,CAAG"
+	"mappings": ""
 }
