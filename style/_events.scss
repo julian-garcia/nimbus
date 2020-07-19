@@ -1,4 +1,5 @@
 .upcoming-events {
+  margin-bottom: 2rem;
 
   @include target-device(tablet) {
     column-gap: 6rem;

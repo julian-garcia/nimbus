@@ -78,6 +78,10 @@
           </div>
         </div>
       </div>
+      <div class="footer-company">
+        <span class="footer-company__address">329 Warren Street | Jersey City, NJ 07302 | (201) 377-0718</span>
+        <span class="footer-company__copywrite">© 2020 Nimbus Dance Works. All rights reserved.</span>
+      </div>
     </footer>
     <?php wp_footer(); ?>
   </body>

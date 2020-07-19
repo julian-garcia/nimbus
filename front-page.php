@@ -56,6 +56,18 @@
       }
     ?>
   </div>
-  <button class="button">View All Events <i class="fas fa-chevron-right"></i></button>
+  <a class="button centered" href="/events" style="max-width: 200px;">
+    View All Events <i class="fas fa-chevron-right"></i>
+  </a>
+  <div class="auto-grid image-boxes">
+    <div class="image-box dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/bulletin.png);">
+      <a href="#" class="image-box__link"></a>
+      <h2 class="image-box__title">Community Bulletin <i class="fas fa-chevron-right"></i></h2>
+    </div>
+    <div class="image-box" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/support.png);">
+      <a href="#" class="image-box__link"></a>
+      <h2 class="image-box__title">Support <i class="fas fa-chevron-right"></i></h2>
+    </div>
+  </div>
 </div>
 <?php get_footer(); ?>

@@ -14,9 +14,12 @@ body {
   background: $colour-dark;
   color: white;
   display: grid;
-  padding: 2rem 0 5rem;
+  padding: 2rem 1rem 5rem;
+  position: relative;
+  grid-template-areas: "links";
 
-  @include target-device(desktop) {
+  @include target-device(tablet) {
+    padding: 2rem 0 5rem;
     grid-template-areas: ". links .";
     grid-template-columns: 1fr 5fr 1fr;
   }
@@ -26,9 +29,13 @@ body {
     display: grid;
     grid-template-columns: auto;
 
+    @include target-device(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+    }
+
     @include target-device(desktop) {
       grid-template-columns: repeat(6, 1fr);
-      column-gap: 1rem;
     }
   }
 
@@ -40,7 +47,30 @@ body {
 
   &__col { position: relative; }
   &__logo {
+    display: none;
+
+    @include target-device(desktop) {
+      display: block;
+      position: absolute;
+      bottom: -5rem;
+    }
+  }
+}
+
+.footer-company {
+  position: relative;
+  margin: 1rem 0 0;
+
+  @include target-device(tablet) {
     position: absolute;
-    bottom: -5rem;
+    bottom: 1rem;
+    right: 1rem;
+    color: white;
+    margin: 1rem 1rem 0;
+  }
+
+  @include target-device(desktop) {
+    right: 12%;
+    &__address { margin: 0 3rem 0 1rem; }
   }
 }

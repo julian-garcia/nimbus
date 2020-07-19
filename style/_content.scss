@@ -1,16 +1,23 @@
 h1, h2, h3 {
   font-family: bold-font;
 }
-p, li, a, button {
+p, li, a, button, span {
   font-family: regular-font;
 }
-a { text-decoration: none; }
+a { text-decoration: none; color: black; }
 
 .button {
   background: transparent;
   font-size: 18px;
   border: 3px solid black;
   padding: 5px 10px;
+  cursor: pointer;
+}
+
+.centered {
+  margin: 1rem auto;
+  display: block;
+  text-align: center;
 }
 
 .social-icons {
@@ -34,11 +41,24 @@ a { text-decoration: none; }
 }
 
 .page-content {
+  position: relative;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4rem auto 0;
+
+  &>* {
+    padding: 0 1rem;
+  }
+
+  @include target-device(tablet) {
+
+  }
 }
 
 .card {
+  margin-bottom: 3rem;
+
+  @include target-device(desktop) { margin-bottom:0; }
+
   &__image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,5 +76,43 @@ a { text-decoration: none; }
   @include target-device(tablet) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 1rem;
+  }
+}
+
+.image-boxes {
+  max-width: 800px;
+  margin: 5rem auto;
+  column-gap: 3rem;
+}
+
+.image-box {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 300px;
+  display: table;
+
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &__title {
+    color: white;
+    text-align: center;
+    display: table-cell; 
+    vertical-align: middle;
+    position: relative;
+  }
+
+  &.dark:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(black, .6);
   }
 }
