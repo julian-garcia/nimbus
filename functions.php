@@ -1,17 +1,17 @@
 <?php
 
+// Inject internal and vendor styles and scripts to the head
 function setup() {
   wp_enqueue_style('style', get_theme_file_uri() . '/style/main.min.css', NULL, microtime());
   // wp_enqueue_script("main", get_theme_file_uri('/js/main.js'), NULL, microtime(), true);
 }
-
 add_action('wp_enqueue_scripts', 'setup');
 
+// Add feature image capability to posts
 function init() {
   add_theme_support('post-thumbnails');
   add_theme_support('title-tag');
 }
-
 add_action('after_setup_theme', 'init');
 
 // Event post type
@@ -34,7 +34,15 @@ function custom_post_type() {
     )
   );
 }
-
 add_action('init', 'custom_post_type');
+
+function register_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' )
+     )
+   );
+ }
+ add_action( 'init', 'register_menus' );
 
 ?>

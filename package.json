@@ -6,12 +6,15 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass --watch --output-style compressed --source-map true --source-map-contents true style/main.scss style/main.min.css"
-
+    "css-build": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 style/main.scss style/main.min.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.14.1"
-  }
+  },
+  "dependencies": {}
 }
+

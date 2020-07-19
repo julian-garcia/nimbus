@@ -1,0 +1,18 @@
+.upcoming-events {
+
+  @include target-device(tablet) {
+    column-gap: 6rem;
+    .card { position: relative; }
+
+    &>.card:nth-child(1)::after,
+    &>.card:nth-child(2)::after {
+      content: '';
+      height: 100%;
+      width: 3px;
+      background-color: $colour-border;
+      position: absolute;
+      top: 0;
+      right: calc(-3rem - 1.5px);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.hero-home {
+  display: grid;
+  grid-template-columns: auto;
+
+  @include target-device(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__slider, &__page-links { height: 40vw; }
+
+  &__slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 6rem;
+    position: relative;
+
+    &-title {
+      color: black;
+    }
+  }
+
+  &__page-link {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 120px center;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.dark:before {
+      background: linear-gradient(90deg, 
+                  rgba(black,.7) 15%, 
+                  rgba(transparent,0) 50%);
+    }
+
+    &.light:before {
+      background: linear-gradient(90deg, 
+                  rgba(white,.7) 15%, 
+                  rgba(transparent,0) 50%);
+    }
+
+    &-title {
+      align-self: center;
+      margin-left: 3rem;
+      position: relative;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+}

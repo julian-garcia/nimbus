@@ -1,1 +1,12 @@
-// body {background: red;}
+@import './variables',
+        '../vendor/fontawesome/scss/fontawesome.scss',
+        '../vendor/fontawesome/scss/brands.scss',
+        '../vendor/fontawesome/scss/solid.scss',
+        './normalise',
+        './mixins',
+        './fonts',
+        './header',
+        './footer',
+        './content',
+        './hero',
+        './events';
