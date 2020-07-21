@@ -10,13 +10,13 @@
     <img class="logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/nimbus.png" alt="">
     <div class="nav-menu">
       <div class="social-icons">
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/NimbusDanceWorks" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-facebook"></i>
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/nimbusdanceworks/" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-instagram-square"></i>
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/nimbusdance" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-twitter"></i>
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">

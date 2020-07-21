@@ -1,0 +1,36 @@
+.card {
+  margin-bottom: 3rem;
+
+  @include target-device(desktop) { margin-bottom:0; }
+
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+  &__link {
+    font-family: bold-font;
+  }
+}
+
+.horizontal {
+  &-cards { margin: 4rem 0; column-gap: 0; }
+  &-card {
+    &__image {
+      background-image: url(../images/rental.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+
+      @include target-device(tablet) {
+        height: 100%;
+      }
+    }
+    &__text {
+      background: $colour-dark;
+      color: white;
+      padding: 2rem;
+    }
+  }
+}

@@ -37,7 +37,7 @@
     </div>
   </div>
 </div>
-<div class="page-content">
+<div class="page-content move-down">
   <h2>Upcoming Events</h2>
   <div class="auto-grid upcoming-events">
     <?php
@@ -56,7 +56,7 @@
       }
     ?>
   </div>
-  <a class="button centered" href="/events" style="max-width: 200px;">
+  <a class="button centered" href="/events" style="max-width: 200px; padding: 10px;">
     View All Events <i class="fas fa-chevron-right"></i>
   </a>
   <div class="auto-grid image-boxes">
