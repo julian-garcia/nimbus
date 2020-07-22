@@ -32,14 +32,17 @@
   <div class="auto-grid">
     <div class="image-slider">
       <?php
-      $args = array('post_type' => 'post', 'category_name' => 'gallery');
-      $posts = new WP_Query($args);
-      while($posts->have_posts() ) {
-        $posts->the_post(); ?>
-        <div class="image-slide show" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)"></div>
-        <?php
-      }
-    ?>
+        $args = array('post_type' => 'post', 'category_name' => 'gallery');
+        $posts = new WP_Query($args);
+        $index = 0;
+        while($posts->have_posts() ) {
+          $index += 1;
+          $posts->the_post(); ?>
+          <div class="image-slide" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)" data-slide="<?php echo $index; ?>"></div>
+          <?php
+        }
+      ?>
+      <div class="image-slider__bullets"></div>
     </div>
     <div class="shaded__text">
       <p>The Nimbus Arts Center houses lobby gallery spaces bathed in natural light through 30’ floor to ceiling windows and featuring spacious contemporary industrial exhibition spaces.  Please stay tuned for information on exhibitions and visual arts programming.</p>

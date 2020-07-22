@@ -3,9 +3,18 @@
 // Inject internal and vendor styles and scripts to the head
 function setup() {
   wp_enqueue_style('style', get_theme_file_uri() . '/style/main.min.css', NULL, microtime());
-  // wp_enqueue_script("main", get_theme_file_uri('/js/main.js'), NULL, microtime(), true);
+  wp_enqueue_script("main", get_theme_file_uri('/js/main.min.js'), NULL, microtime(), true);
 }
 add_action('wp_enqueue_scripts', 'setup');
+
+function add_type_attribute($tag, $handle, $src) {
+  if ( 'main' !== $handle ) {
+    return $tag;
+  }
+  $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
+  return $tag;
+}
+add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);
 
 // Add feature image capability to posts
 function init() {

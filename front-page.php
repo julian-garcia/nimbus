@@ -4,10 +4,11 @@
     <?php
       $args = array('post_type' => 'post', 'category_name' => 'headline');
       $posts = new WP_Query($args);
-
+      $index = 0;
       while($posts->have_posts() ) {
+        $index += 1;
         $posts->the_post(); ?>
-        <div class="hero-home__slide show" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)">
+        <div class="hero-home__slide" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)" data-slide="<?php echo $index; ?>">
           <a href="<?php the_permalink()?>" class="hero-home__link"></a>
           <div>
             <h2 class="hero-home__slide-title"><?php the_title(); ?></h2>
@@ -17,6 +18,7 @@
         <?php
       }
     ?>
+    <div class="hero-home__bullets"></div>
   </div>
   <div class="hero-home__page-links">
     <div class="hero-home__page-link" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/company.png); background-color: black; color: white;">
