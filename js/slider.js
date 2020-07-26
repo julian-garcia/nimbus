@@ -1,8 +1,6 @@
 const slider = document.querySelector('[class$="slider"]');
 const sliderBullets = document.querySelector('[class$="bullets"]');
 const slides = document.querySelectorAll('[class$="slide"]');
-const logo = document.querySelector('.logo');
-let logoMaxWidth;
 let bullets;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,9 +32,6 @@ if (slider) {
   });
 }
 
-window.addEventListener('scroll', calcLogoMaxWidth);
-window.addEventListener('resize', calcLogoMaxWidth);
-
 function startSlider() {
   let slideNum = 2;
   if (!slider) return;
@@ -53,27 +48,4 @@ function moveSlide(slideNumber) {
     .classList.add('show');
   document.querySelector(`[data-bullet="${slideNumber}"]`)
     .classList.add('active');
-}
-
-function reduceLogoSize() {
-  if (window.pageYOffset > 300) {
-    logo.style.maxWidth = 'calc(' + logoMaxWidth + ' * .5)';
-  } else {
-    logo.style.maxWidth = logoMaxWidth;
-  }
-}
-
-function calcLogoMaxWidth() {
-  const tabletMediaQuery = window.matchMedia("(min-width: 700px)");
-  const desktopMediaQuery = window.matchMedia("(min-width: 1200px)");
-
-  if (desktopMediaQuery.matches) {
-    logoMaxWidth = '230px';
-  } else if (tabletMediaQuery.matches) {
-    logoMaxWidth = '130px';
-  } else {
-    logoMaxWidth = '100px';
-  }
-  
-  reduceLogoSize();
 }
