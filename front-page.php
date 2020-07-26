@@ -29,11 +29,11 @@
       <a href="/school-of-nimbus" class="hero-home__link"></a>
       <h2 class="hero-home__page-link-title">School of<br>Nimbus</h2>
     </div>
-    <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/center.png); background-position: center; color: white;">
+    <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/center.png); color: white;">
       <a href="/nimbus-arts-center" class="hero-home__link"></a>
       <h2 class="hero-home__page-link-title">Nimbus Arts Center<br>At the Lively</h2>
     </div>
-    <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/outreach.png); background-position: center; color: white;">
+    <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/outreach.png); color: white;">
       <a href="/outreach" class="hero-home__link"></a>
       <h2 class="hero-home__page-link-title">Outreach</h2>
     </div>

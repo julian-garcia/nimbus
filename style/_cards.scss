@@ -6,7 +6,7 @@
   &__image {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 250px;
   }
   &__link {
     font-family: bold-font;
@@ -30,7 +30,11 @@
     &__text {
       background: $colour-dark;
       color: white;
-      padding: 2rem;
+      padding: 1rem 2rem;
+
+      @include target-device(tablet) {
+        padding: 6rem 4rem;
+      }
     }
   }
 }

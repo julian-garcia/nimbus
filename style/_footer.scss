@@ -13,15 +13,21 @@ body {
   width: 100%;
   background: $colour-dark;
   color: white;
-  display: grid;
-  padding: 2rem 1rem 5rem;
-  position: relative;
-  grid-template-areas: "links";
+  padding: 0 1rem 0;
+  font-size: 15px;
 
-  @include target-device(tablet) {
-    padding: 2rem 0 5rem;
-    grid-template-areas: ". links .";
-    grid-template-columns: 1fr 5fr 1fr;
+  h3 {font-size: 15px;}
+
+  .site-map, &-company {
+    display: grid;
+    position: relative;
+    grid-template-areas: "links";
+
+    @include target-device(tablet) {
+      padding: 2rem 0 0;
+      grid-template-areas: ". links .";
+      grid-template-columns: 1fr 5fr 1fr;
+    }
   }
 
   &__links {
@@ -46,32 +52,54 @@ body {
   }
 
   &__col { position: relative; }
-  &__logo {
-    display: none;
-
-    @include target-device(desktop) {
-      display: block;
-      position: absolute;
-      bottom: -5rem;
-      width: 200px;
-    }
-  }
 }
 
 .footer-company {
-  position: relative;
-  margin: 1rem 0 0;
+  margin-top: 0;
 
   @include target-device(tablet) {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    color: white;
-    margin: 1rem 1rem 0;
+    margin-top: -2rem;
   }
 
-  @include target-device(desktop) {
-    right: 12%;
-    &__address { margin: 0 3rem 0 1rem; }
+  &__columns {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: end;
+    justify-items: end;
+
+    @include target-device(tablet) {
+      grid-template-columns: 1fr 2fr;
+      column-gap: 1rem;
+    }
+
+    @include target-device(desktop) {
+      grid-template-columns: 1fr 2fr 2fr;
+    }
+  }
+
+  &__logo {
+    width: 200px;
+    @include target-device(tablet) { width: 100%; }
+  }
+
+  &__address, &__copywrite {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 12px;
+    justify-self: center;
+    text-align: center;
+
+    @include target-device(tablet) { justify-self: end; display: none; }
+    @include target-device(desktop) { display: block; }
+  }
+
+  &__addr {
+    display: none;
+    text-align: right;
+    font-size: 12px;
+
+    @include target-device(tablet) { display: block; }
+    @include target-device(desktop) { display: none; }
   }
 }

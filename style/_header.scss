@@ -1,9 +1,14 @@
 .logo {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  max-width: 130px;
+  max-width: 100px;
   z-index: 1;
+  transition: max-width 1s ease-in-out;
+
+  @include target-device(tablet) {
+    max-width: 130px;
+  }
 
   @include target-device(desktop) {
     max-width: 230px;
@@ -25,6 +30,32 @@
     grid-template-columns: 1fr 4fr .5fr;
   }
 
+  .sub-menu { 
+    display: none; 
+    position: absolute;
+    background: rgba(white, .9);
+    z-index: 5;
+    list-style: none;
+    padding: 1rem 2rem 1rem 1rem;
+    border: 1px solid $colour-menu-border;
+    bottom: -57px;
+
+    &>.menu-item:after {
+      content: '\f054';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 1rem;
+      bottom: 50%; 
+      transform: translateY(50%);
+      font-size: .9rem;
+    }
+  }
+
+  .menu-item:hover .sub-menu {
+    display: block;
+  }
+
   &__list {
     list-style: none;
     margin: 0;
@@ -40,13 +71,14 @@
     }
 
     &>.menu-item {
+      position: relative;
       padding-bottom: 10px;
       border-bottom: 3px solid transparent;
       text-align: center;
       display: inline-block;
       margin: 0 .5rem;
 
-      &.current-menu-item {
+      &.current-menu-item, &.current-menu-parent {
         border-bottom-color: black;
       }
       a {
@@ -62,7 +94,7 @@
   @include target-device(tablet) { display: none; }
 
   &-toggle {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     font-size: 30px;
@@ -87,7 +119,7 @@
     background: rgba(white, .95);
     padding-top: 5rem;
   }
-
+  .sub-menu { display: none; }
   .menu-item {
     display: table;
     margin: 0 auto 1rem;

@@ -24,7 +24,7 @@ function init() {
 add_action('after_setup_theme', 'init');
 
 // Event post type
-function custom_post_type() {
+function event_post_type() {
   register_post_type('event',
     array(
       'rewrite' => array('slug' => 'events'),
@@ -43,7 +43,30 @@ function custom_post_type() {
     )
   );
 }
-add_action('init', 'custom_post_type');
+add_action('init', 'event_post_type');
+
+// Dancer post type
+function dancer_post_type() {
+  register_post_type('dancer',
+    array(
+      'rewrite' => array('slug' => 'dancers'),
+      'labels' => array(
+        'name' => 'Dancers',
+        'singular_name' => 'Dancer',
+        'add_new_item' => 'Add New Dancer',
+        'edit_item' => 'Edit Dancer'
+      ),
+      'menu_icon' => 'dashicons-admin-users',
+      'public' => true,
+      'has_archive' => false,
+      'supports' => array(
+        'title', 'thumbnail', 'editor', 'excerpt'
+      ),
+      'taxonomies'  => array( 'category' )
+    )
+  );
+}
+add_action('init', 'dancer_post_type');
 
 function register_menus() {
   register_nav_menus(

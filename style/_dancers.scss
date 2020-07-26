@@ -1,0 +1,21 @@
+.dancers {
+  margin: 3rem 0 0;
+  column-gap: 2rem;
+
+  @include target-device(tablet) {
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  }
+  @include target-device(desktop) {
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  }
+}
+
+.dancer {
+  margin-bottom: 3rem;
+
+  &__image {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+  }
+}

@@ -1,20 +1,24 @@
 <?php get_header(); ?>
 <div class="hero-page" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/lively.png);">
-  <h2 class="hero-page__title">Nimbus Arts Center at the Lively</h2>
+  <?php while(have_posts()): the_post(); ?>
+  <h2 class="hero-page__title"><?php the_title(); ?></h2>
   <img class="hero-page__bottom" src="<?php echo get_bloginfo('template_directory'); ?>/images/curve.svg" alt="">
 </div>
-<div class="page-content">
+<div class="page-content full-width">
   <h3 class="centered">Nimbus Dance announces a permanent new home located at<br>329 Warren Street in Jersey City’s Powerhouse Arts District. </h3>
-  <?php while(have_posts()): the_post(); ?>
-      <div class="auto-grid headline">
-        <div class="headline__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)"></div>
-        <div class="headline__text">
-          <?php the_content(); ?>
+    <div class="auto-grid headline">
+      <div class="headline__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)"></div>
+      <div class="headline__text">
+        <?php the_content(); ?>
+        <p>
           <a href="#" class="button">Become A Member <i class="fas fa-chevron-right"></i></a>
           <a href="#" class="button">Upcoming Events <i class="fas fa-chevron-right"></i></a>
-        </div>
+        </p>
       </div>
+    </div>
   <?php endwhile; ?>
+</div>
+<div class="page-content">
   <h3 class="centered" style="max-width: 700px">Nimbus is proud to partner with the following organizations who present regular and ongoing programs at the Nimbus Arts Center.</h3>
   <div class="auto-grid partners">
     <a href="https://www.singingwithmolly.com/" class="auto-grid__link" target="_blank" rel="noopener noreferrer">

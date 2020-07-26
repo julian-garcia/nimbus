@@ -64,6 +64,10 @@
     &-title {
       color: white;
       position: relative;
+      font-size: 1.1rem;
+
+      @include target-device(tablet) { font-size: 1.2rem; }
+      @include target-device(desktop) { font-size: 1.5rem; }
     }
 
     &.show { opacity: 1; }
