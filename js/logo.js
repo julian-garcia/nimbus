@@ -1,6 +1,7 @@
 const logo = document.querySelector('.logo');
 let logoMaxWidth;
 
+window.addEventListener('DOMContentLoaded', calcLogoMaxWidth);
 window.addEventListener('scroll', calcLogoMaxWidth);
 window.addEventListener('resize', calcLogoMaxWidth);
 

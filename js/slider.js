@@ -3,27 +3,27 @@ const sliderBullets = document.querySelector('[class$="bullets"]');
 const slides = document.querySelectorAll('[class$="slide"]');
 let bullets;
 
-document.addEventListener('DOMContentLoaded', () => {
-  calcLogoMaxWidth();
-  slides.forEach((slide, i) => {
-    const bulletElement = document.createElement('i');
-
-    if (i === 0) {
-      slide.classList.add('show');
-      bulletElement.className = 'fas fa-circle bullet active';
-    } else {
-      slide.classList.remove('show');
-      bulletElement.className = 'fas fa-circle bullet';
-    }
-    
-    bulletElement.setAttribute('data-bullet', i + 1);
-    sliderBullets.appendChild(bulletElement);
-  });
-  bullets = document.querySelectorAll('.bullet');
-  startSlider();
-});
-
 if (slider) {
+  document.addEventListener('DOMContentLoaded', () => {
+    slides[0].classList.add('show');
+    slides.forEach((slide, i) => {
+      const bulletElement = document.createElement('i');
+
+      if (i === 0) {
+        slide.classList.add('show');
+        bulletElement.className = 'fas fa-circle bullet active';
+      } else {
+        slide.classList.remove('show');
+        bulletElement.className = 'fas fa-circle bullet';
+      }
+      
+      bulletElement.setAttribute('data-bullet', i + 1);
+      sliderBullets.appendChild(bulletElement);
+    });
+    bullets = document.querySelectorAll('.bullet');
+    startSlider();
+  });
+
   slider.addEventListener('click', (e) => {
     if (e.target.classList.contains('bullet')) {
       const slideNumber = e.target.getAttribute('data-bullet');

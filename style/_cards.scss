@@ -14,7 +14,10 @@
 }
 
 .horizontal {
-  &-cards { margin: 4rem 0; column-gap: 0; }
+  &-cards { 
+    margin: 4rem 0; column-gap: 0; 
+    &.flat { column-gap: 1rem; }
+  }
   &-card {
     &__image {
       background-image: url(../images/rental.png);
@@ -22,19 +25,44 @@
       background-repeat: no-repeat;
       background-position: center;
       height: 200px;
+      position: relative;
 
       @include target-device(tablet) {
         height: 100%;
       }
+
+      .flat > & { background-size: contain; }
+
+      &.wave-right:after,
+      &.wave-left:after {
+        content: url(../images/separator.svg);
+        position: absolute;
+        top: 50%;
+        width: 100px;
+      }
+      &.wave-right:after { right: 1rem; }
+      &.wave-left:after { left: -4rem; }
+      &.wave-green:after { content: url(../images/separator-green.svg); }
+      &.wave-turquoise:after { content: url(../images/separator-turquoise.svg); }
+      &.wave-orange:after { content: url(../images/separator-orange.svg); }
     }
     &__text {
-      background: $colour-dark;
-      color: white;
+      background: white;
+      color: $colour-dark;
       padding: 1rem 2rem;
 
       @include target-device(tablet) {
         padding: 6rem 4rem;
+        .flat > & { padding: 2rem 4rem; }
       }
+
+      &.dark {
+        background: $colour-dark;
+        color: white;
+      }
+
+      &.text-right { padding: 2rem 6rem 2rem 0; }
+      &.text-left { padding: 2rem 0 2rem 6rem; }
     }
   }
 }

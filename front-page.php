@@ -23,19 +23,19 @@
   <div class="hero-home__page-links">
     <div class="hero-home__page-link" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/company.png); background-color: black; color: white;">
       <a href="/company" class="hero-home__link"></a>
-      <h2 class="hero-home__page-link-title">Nimbus<br>Company</h2>
+      <h2 class="hero-home__page-link-title">Nimbus<br>Company <i class="fas fa-chevron-right"></i></h2>
     </div>
     <div class="hero-home__page-link light" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/school.png);">
       <a href="/school-of-nimbus" class="hero-home__link"></a>
-      <h2 class="hero-home__page-link-title">School of<br>Nimbus</h2>
+      <h2 class="hero-home__page-link-title">School of<br>Nimbus <i class="fas fa-chevron-right"></i></h2>
     </div>
     <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/center.png); color: white;">
       <a href="/nimbus-arts-center" class="hero-home__link"></a>
-      <h2 class="hero-home__page-link-title">Nimbus Arts Center<br>At the Lively</h2>
+      <h2 class="hero-home__page-link-title">Nimbus Arts Center<br>At the Lively <i class="fas fa-chevron-right"></i></h2>
     </div>
     <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/outreach.png); color: white;">
       <a href="/outreach" class="hero-home__link"></a>
-      <h2 class="hero-home__page-link-title">Outreach</h2>
+      <h2 class="hero-home__page-link-title">Outreach <i class="fas fa-chevron-right"></i></h2>
     </div>
   </div>
 </div>
@@ -58,7 +58,7 @@
       }
     ?>
   </div>
-  <a class="button centered" href="/events" style="max-width: 200px; padding: 10px;">
+  <a class="button centered block" href="/events" style="max-width: 200px; padding: 10px;">
     View All Events <i class="fas fa-chevron-right"></i>
   </a>
   <div class="auto-grid image-boxes">

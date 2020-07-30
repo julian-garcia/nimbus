@@ -12,6 +12,11 @@
   }
 }
 
+.condensed {
+  max-width: 800px;
+  .auto-grid {grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));}
+}
+
 .auto-grid {
   display: grid;
   grid-template-columns: auto;
@@ -31,6 +36,7 @@
     width: 100%;
     .partners & { width: auto; height: 70px; }
   }
+  &__fixed { width: 100%; height: auto; margin: auto; }
 }
 
 .thirds-grid {

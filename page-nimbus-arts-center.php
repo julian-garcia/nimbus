@@ -34,7 +34,7 @@
 </div>
 <div class="shaded">
   <div class="auto-grid">
-    <div class="image-slider">
+    <div class="image-slider" style="min-height: 500px;">
       <?php
         $args = array('post_type' => 'post', 'category_name' => 'gallery');
         $posts = new WP_Query($args);
@@ -59,7 +59,7 @@
   <h3 class="centered" style="max-width: 700px">Nimbus has launched a Capital Campaign to raise funds for theater outfitting costs and interior construction of the 2nd floor. Michael DeMarco, CEO of Mack-Cali Realty Corporation, is co-chair of the Capital Campaign committee.</h3>
   <div class="auto-grid horizontal-cards">
     <div class="horizontal-card__image"></div>
-    <div class="horizontal-card__text">
+    <div class="horizontal-card__text dark">
       <h3>The theatre and studios are available for rental.</h3>
       <p>For more information, contact Haejin at:<br>production@nimbusdanceworks.org</p>
     </div>

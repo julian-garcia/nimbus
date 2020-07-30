@@ -4,15 +4,17 @@ const previousMonthEl = document.getElementById('previousMonth');
 const currentMonthEl = document.getElementById('currentMonth');
 const nextMonthEl = document.getElementById('nextMonth');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const today = new Date();
-  buildCalendar(today.getMonth(), today.getFullYear());
-  setNavMonths(today);
-});
+if (calendar) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const today = new Date();
+    buildCalendar(today.getMonth(), today.getFullYear());
+    setNavMonths(today);
+  });
 
-calendarNav.addEventListener('click', (e) => {
-  navigateMonths(e);
-});
+  calendarNav.addEventListener('click', (e) => {
+    navigateMonths(e);
+  });
+}
 
 function buildCalendar(selectedMonth, selectedYear) {
   const firstDayOfMonth = new Date(selectedYear, selectedMonth, 1).getDay();

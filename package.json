@@ -9,7 +9,7 @@
     "css-build": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 style/main.scss style/main.min.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch",
-    "jsminify": "terser js/slider.js js/logo.js js/calendar.js --compress --mangle --ecma 2016 --output js/main.min.js"
+    "jsminify": "terser js/slider.js js/logo.js js/calendar.js js/video.js --compress --mangle --ecma 2016 --output js/main.min.js"
   },
   "author": "",
   "license": "ISC",

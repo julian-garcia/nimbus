@@ -14,7 +14,7 @@
     height: 100%;
     position: absolute;
     opacity: 0;
-    transition: opacity 1.5s ease-in-out, background-image 1s ease-in-out;
+    transition: opacity .7s ease-in-out, background-image .7s ease-in-out;
 
     &.show { opacity: 1; }
   }
@@ -95,7 +95,7 @@
     cursor: pointer;
     color: gray;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 16px;
 
     &.active {
       color: white;

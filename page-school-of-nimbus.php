@@ -26,12 +26,12 @@
   <h3 class="centered regular" style="max-width: 800px">The School of Nimbus gives students the opportunity to explore creativity and movement while advancing their technique, so that those who are interested in pursuing dance as a career receive the preparation they need. But, our classes are also fun! For students who simply want to explore creative expression through dance, our classes provide a challenging yet supportive environment!</h3>
 </div>
 <div class="shaded page-title">
-  <div class="thirds-grid two-one">
+  <div class="thirds-grid two-one condensed">
     <h2>Professional Dance Instruction Emphasizing Technique, Musicality, Creativity, Fitness, and Fun!</h2>
   </div>
 </div>
 <div class="shaded" style="margin-top: 0">
-  <div class="thirds-grid two-one">
+  <div class="thirds-grid two-one condensed">
     <div>
       <ul class="list">
         <li> Small class sizes: Youth ages 2-18 + adults. </li>
@@ -54,7 +54,7 @@
 <div class="page-content">
   <h3 class="centered regular" style="max-width: 700px">Nimbus Dance Works is a 501(c)3 non-profit professional dance company and school.</h3>
   <h3 class="centered" style="max-width: 700px">Thank you to our title sponsor</h3>
-  <img class="centered vertical-margin" src="<?php echo get_bloginfo('template_directory'); ?>/images/mack-cali.jpg" alt="" style="max-width: 400px">
+  <img class="centered vertical-margin" src="<?php echo get_bloginfo('template_directory'); ?>/images/mack-cali.jpg" alt="" style="max-width: 300px">
   <img class="centered vertical-margin" src="<?php echo get_bloginfo('template_directory'); ?>/images/separator.svg" alt="">
   <h3 class="centered">Connect with School of Nimbus: </h3>
   <div class="social-icons centered">
