@@ -34,13 +34,13 @@
       <label for="nav-mobile-toggle">
         <i class="fas fa-bars nav-mobile-toggle"></i>
       </label>
-      <input type="checkbox" id="nav-mobile-toggle"/>
       <?php wp_nav_menu(array( 
         'theme_location'  => 'header-menu',
         'container_class' => 'nav-mobile__menu',
         'menu_class'      => 'nav-menu__list',
         'container'       => 'nav'
       )); ?>
+      <h2 class="nav-menu__close">CLOSE</h2>
     </div>
   </header>
   <main class="content">
