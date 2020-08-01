@@ -1,5 +1,7 @@
 const calendar = document.querySelector('.calendar');
+const eventList = document.querySelector('.event-list');
 const calendarNav = document.querySelector('.calendar-nav');
+const calendarView = document.querySelector('.calendar-view');
 const previousMonthEl = document.getElementById('previousMonth');
 const currentMonthEl = document.getElementById('currentMonth');
 const nextMonthEl = document.getElementById('nextMonth');
@@ -14,6 +16,10 @@ if (calendar) {
   calendarNav.addEventListener('click', (e) => {
     navigateMonths(e);
   });
+
+  calendarView.addEventListener('click', (e) => {
+    changeView(e);
+  });
 }
 
 function buildCalendar(selectedMonth, selectedYear) {
@@ -25,9 +31,8 @@ function buildCalendar(selectedMonth, selectedYear) {
 
   const maxLimit = (lastDayOfMonth + firstDayOfMonth > 35) ? 42 : 35;
 
-  calendar.querySelectorAll('.calendar__day').forEach(day => {
-    day.remove();
-  });
+  calendar.querySelectorAll('.calendar__day').forEach(day => { day.remove(); });
+  eventList.querySelectorAll('.event').forEach(day => { day.remove(); });
 
   for (let i = 0; i < maxLimit; i++) {
     if (i == firstDayOfMonth) { day = 1; }
@@ -40,6 +45,7 @@ function buildCalendar(selectedMonth, selectedYear) {
     } 
     else if (day >= 1 && day <= lastDayOfMonth) { 
       addDayToCalendar(day, selectedMonth, selectedYear, 'active');
+      addDayToEventList(day, selectedMonth, selectedYear);
       day++; 
     }
     else if (day > lastDayOfMonth) { 
@@ -78,6 +84,40 @@ function addDayToCalendar(calDay, calMonth, calYear, activeClass) {
   calendar.appendChild(calendarDay);
 }
 
+function addDayToEventList(calDay, calMonth, calYear) {
+  const monthDate = new Date(calYear, calMonth, calDay);
+
+  events.forEach(event => {
+    const eventDate = new Date(event.date.substr(6,4), 
+                               event.date.substr(3,2) - 1, 
+                               event.date.substr(0,2));
+
+    if (eventDate.getTime() == monthDate.getTime()) {
+      const eventDay = document.createElement('div');
+      const eventImg = document.createElement('div');
+      const eventText = document.createElement('div');
+      const eventLink = document.createElement('a');
+      eventDay.classList.add('event');
+      eventImg.classList.add('event__image');
+      eventText.classList.add('event__text');
+      eventLink.classList.add('button');
+      eventLink.classList.add('block');
+      eventText.innerHTML = '<p>' + eventDate.toLocaleString('default', { weekday: 'long' }) + 
+                            ', ' + eventDate.toLocaleString('default', { month: 'long' }) + 
+                            ' ' + eventDate.getDate() + 
+                            ', ' +  event.time.replace(' ', '') + '</p>' + 
+                            '<h3>' + event.title + '</h3>';
+      eventLink.href = event.link;
+      eventLink.innerHTML = 'RSVP <i class="fas fa-chevron-right"></i>';
+      eventText.appendChild(eventLink);
+      eventImg.style.backgroundImage = 'url(' + event.image + ')';
+      eventDay.appendChild(eventImg);
+      eventDay.appendChild(eventText);
+      eventList.appendChild(eventDay);
+    }
+  });  
+}
+
 function setNavMonths(currentDate) {
   const lastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
   const nextMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
@@ -102,5 +142,18 @@ function navigateMonths(e) {
     const dt = new Date(parseInt(dtYear), parseInt(dtMonth) + 1, 1);
     buildCalendar(dt.getMonth(), dt.getFullYear());
     setNavMonths(dt);
+  }
+}
+
+function changeView(e) {
+  calendarView.querySelectorAll('i').forEach(icon => { icon.classList.remove('active'); })
+  if (e.target.classList.contains('calendar-view__list')) {
+    eventList.classList.add('show');
+    calendar.classList.remove('show');
+    e.target.classList.add('active');
+  } else {
+    eventList.classList.remove('show');
+    calendar.classList.add('show');
+    e.target.classList.add('active');
   }
 }
