@@ -3,15 +3,21 @@ const mobileMenu = document.querySelector('.nav-mobile__menu');
 const mobileToggle = document.querySelector('.nav-mobile-toggle');
 const mobileClose = document.querySelector('.nav-menu__close');
 
-mobileMenuContainer.addEventListener('click', (e) => showSubMenu(e));
+mobileMenuContainer.addEventListener('click', (e) => {
+  showMobileSubMenu(e);
+  toggleMobileMenu(e);
+});
 
-function showSubMenu(e) {
+function showMobileSubMenu(e) {
   if (e.target.classList.contains('menu-item')) {
     const subMenu = e.target.querySelector('.nav-mobile .sub-menu');
     if (subMenu) { 
       subMenu.classList.toggle('show');
     }
   }
+}
+
+function toggleMobileMenu(e) {
   if (e.target.classList.contains('nav-menu__close')) {
     e.target.style.display = 'none';
     mobileMenu.style.display = 'none';

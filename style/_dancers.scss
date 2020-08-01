@@ -1,12 +1,16 @@
 .dancers {
-  margin: 3rem 0 0;
+  margin: 3rem 1rem 0;
   column-gap: 2rem;
 
+  @include target-device(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   @include target-device(tablet) {
-    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
   @include target-device(desktop) {
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    margin: 3rem 0 0;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

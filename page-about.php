@@ -19,23 +19,26 @@
     <div class="horizontal-card__image wave-right wave-green" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/company.jpg);"></div>
     <div class="horizontal-card__text text-right">
       <p>With a repertory of over 30 works, the Company performs on tour nationally and throughout the greater New Jersey/New York region, impacting 16,000 people each year.</p>
-      <a href="/company" class="button vertical-margin">The Company <i class="fas fa-chevron-right"></i></a>
+      <a href="/company" class="button mobile vertical-margin">The Company <i class="fas fa-chevron-right"></i></a>
     </div>
   </div>
-  <div class="auto-grid horizontal-cards flat">
+  <img class="centered vertical-margin phone" src="<?php echo get_bloginfo('template_directory'); ?>/images/separator-green.svg" alt="">
+  <div class="auto-grid horizontal-cards flat re-order">
     <div class="horizontal-card__text text-left">
       <p>Nimbus’ community engagement initiatives serve over 7,000 children annually through in-school, movement-based programs.</p>
-      <a href="/outreach" class="button vertical-margin">Community <i class="fas fa-chevron-right"></i></a>
+      <a href="/outreach" class="button mobile vertical-margin">Community <i class="fas fa-chevron-right"></i></a>
     </div>
     <div class="horizontal-card__image wave-left wave-turquoise" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/outreach.png);"></div>
   </div>
+  <img class="centered vertical-margin phone" src="<?php echo get_bloginfo('template_directory'); ?>/images/separator-turquoise.svg" alt="">
   <div class="auto-grid horizontal-cards flat">
     <div class="horizontal-card__image wave-right wave-orange" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/school-nimbus.jpg);"></div>
     <div class="horizontal-card__text text-right">
       <p>The School of Nimbus holds 45 classes throughout the week and also offers the Junior Youth Ensemble, Nimbus Youth Ensemble, and the Pre-Professional Program.</p>
-      <a href="/school-of-nimbus" class="button vertical-margin">School of Nimbus <i class="fas fa-chevron-right"></i></a>
+      <a href="/school-of-nimbus" class="button mobile vertical-margin">School of Nimbus <i class="fas fa-chevron-right"></i></a>
     </div>
   </div>
+  <img class="centered vertical-margin phone" src="<?php echo get_bloginfo('template_directory'); ?>/images/separator-orange.svg" alt="">
 </div>
 <div class="page-content vertical-margin">
   <h3 class="centered regular limit-width" style="text-align: left">Most recently, Nimbus was a recipient of DanceNYC’s Dance Advancement Fund in recognition of the company’s demonstrated commitment to diversity, justice, equity, and inclusion. In May 2020, Nimbus will relocate to the new state-of-the-art Nimbus Arts Center at the Lively in Jersey City’s Powerhouse Arts District.</h3>

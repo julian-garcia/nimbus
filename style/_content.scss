@@ -6,9 +6,7 @@ p, li, a, button, span {
 }
 a { text-decoration: none; color: black; }
 
-.content {
-  margin-bottom: 3rem;
-}
+.content { margin-bottom: 3rem; }
 
 .button.button {
   background: transparent;
@@ -29,6 +27,18 @@ a { text-decoration: none; color: black; }
   &.fixed { width: 200px; }
 
   &.block { display: block; }
+
+  &.full-width { max-width: unset; }
+
+  &.mobile {
+    margin: auto;
+    display: block;
+
+    @include target-device(tablet) { 
+      display: inline-block;
+      margin: .5rem .5rem .5rem 0;
+    }
+  }
 }
 
 .video {
@@ -58,14 +68,17 @@ a { text-decoration: none; color: black; }
 }
 
 .centered.centered {
-  margin: 1rem auto;
+  margin-top: inherit;
+  margin-bottom: inherit;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   text-align: center;
 }
 
 .limit-width { max-width: 700px; }
 
-.vertical-margin {
+.vertical-margin.vertical-margin {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -153,7 +166,7 @@ a { text-decoration: none; color: black; }
 
 .headline {
   column-gap: 0;
-  margin: 0;
+  margin: 2rem 0;
 
   @include target-device(tablet) { margin: 6rem 0; }
 
@@ -213,8 +226,10 @@ a { text-decoration: none; color: black; }
   }
 
   &__text {
-    padding: 6rem 4rem;
+    padding: 2rem;
     position: relative;
+
+    @include target-device(tablet) { padding: 6rem 4rem; }
 
     .artist {
       position: absolute;
@@ -254,6 +269,9 @@ a { text-decoration: none; color: black; }
 }
 
 .regular {font-family: regular-font; font-weight: normal;}
-
 .secondary-bg { background: $colour-secondary; }
 .secondary-color.secondary-color { color: $colour-secondary; }
+.phone {
+  display: inherit;  
+  @include target-device(tablet) { display: none !important; }
+}

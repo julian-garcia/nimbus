@@ -210,8 +210,6 @@
     top: 1rem;
     z-index: 99;
     right: 2rem;
-    font-family: regular-font;
-    font-weight: normal;
     font-size: 1rem;
 
     @include target-device(phone) { right: 3rem; }

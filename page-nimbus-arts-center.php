@@ -5,7 +5,7 @@
   <img class="hero-page__bottom" src="<?php echo get_bloginfo('template_directory'); ?>/images/curve.svg" alt="">
 </div>
 <div class="page-content full-width">
-  <h3 class="centered">Nimbus Dance announces a permanent new home located at<br>329 Warren Street in Jersey City’s Powerhouse Arts District. </h3>
+  <h3 class="centered">Nimbus Dance announces a permanent new home located at<br>329 Warren Street in Jersey City’s Powerhouse Arts District.</h3>
     <div class="auto-grid headline">
       <div class="headline__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)"></div>
       <div class="headline__text">
@@ -50,7 +50,7 @@
     </div>
     <div class="shaded__text">
       <p>The Nimbus Arts Center houses lobby gallery spaces bathed in natural light through 30’ floor to ceiling windows and featuring spacious contemporary industrial exhibition spaces.  Please stay tuned for information on exhibitions and visual arts programming.</p>
-      <a href="#" class="button">Visit the Visual Arts Gallery <i class="fas fa-chevron-right"></i></a>
+      <a href="#" class="button full-width">Visit the Visual Arts Gallery <i class="fas fa-chevron-right"></i></a>
       <p class="artist">Artist: Meredith Lippman</p>
     </div>
   </div>

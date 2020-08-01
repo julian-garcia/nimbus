@@ -41,7 +41,7 @@
   <p class="centered limit-width">LMC, A Lennar Company, Mack-Cali Realty Corporation, Base Fitness, Hopkins Group LLC, The Geraldine R. Dodge Foundation, Dance/NYC Dance Advancement Fund, Dvora, New Music USA, Goldman Sachs, US Trust/Bank of America, CoolVines, SILVERMAN, Dance New Jersey, Hudson County Office of Cultural Affairs, the City of Jersey City,  NJ Department of State, Division of Travel and Tourism and by funds from the New Jersey State Council on the Arts, a partner agency of the National Endowment for the Arts, and by generous donors and sponsors. Thank you!</p>
 </div>
 <div class="page-content condensed vertical-margin">
-  <div class="auto-grid">
+  <div class="auto-grid" style="padding: 0 1rem">
     <?php
       $args = array('post_type' => 'post', 
                     'category_name' => 'sponsor', 
