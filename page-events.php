@@ -4,7 +4,7 @@
     content:url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
   }
 </style>
-<div class="hero-page half" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/events.jpg); background-position: bottom;">
+<div class="hero-page half" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/events.jpg); background-position: bottom right;">
   <?php while(have_posts()): the_post(); ?>
   <h2 class="hero-page__title" style="top:100px"><?php the_title(); ?></h2>
   <img class="hero-page__bottom" src="<?php echo get_bloginfo('template_directory'); ?>/images/curve.svg" alt="">
@@ -43,7 +43,7 @@
 <?php
     $args = array('post_type' => 'event');
     $event_posts = new WP_Query($args);
-    echo '<script>let events = [];';
+    echo '<script>var events = [];';
     while($event_posts->have_posts() ) {
       $event_posts->the_post(); 
       echo 'events.push({title:"', the_title(), '", 

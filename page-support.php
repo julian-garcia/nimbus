@@ -22,6 +22,7 @@
     <a href="#" class="button">COVID-19 Fund <i class="fas fa-chevron-right"></i></a>
     <a href="#" class="button">Scholarship Fund <i class="fas fa-chevron-right"></i></a>
     <a href="#" class="button">Capital Campaign <i class="fas fa-chevron-right"></i></a>
+    <a href="#" class="button">Donor Benefits <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="page-content vertical-margin">
@@ -33,7 +34,7 @@
 </div>
 <div class="page-content vertical-margin">
   <a href="" class="centered">Tax ID/ 990 IRS Forms (PDF)/ 501(c)(3) Organization <i class="fas fa-chevron-right"></i></a>
-  <p class="centered vertical-margin limit-width">To speak with Nimbus staff about making a gift of appreciated securities or to include Nimbus in planned giving, contact: <br>Derick McKoy at development@nimbusdanceworks.org</p>
+  <p class="centered vertical-margin limit-width">To speak with Nimbus staff about making a gift of appreciated securities or to include Nimbus in planned giving, contact: <br>Derick McKoy Jr. at development@nimbusdanceworks.org</p>
 </div>
 <img class="centered vertical-margin" src="<?php echo get_bloginfo('template_directory'); ?>/images/separator.svg" alt="">
 <div class="page-content vertical-margin">

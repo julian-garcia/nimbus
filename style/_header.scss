@@ -119,6 +119,7 @@
     z-index: 98;
     background: black;
     padding: 3rem 2rem 1rem;
+    overflow-y: scroll;
 
     @include target-device(phone) {
       padding: 3rem 3rem 1rem;

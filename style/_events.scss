@@ -53,6 +53,8 @@
 
     a {
       font-size: 12px;
+      text-decoration: underline;
+      font-weight: bold;
       @include target-device(desktop) { font-size: 1rem; }
     }
   }

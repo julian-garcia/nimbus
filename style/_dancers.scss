@@ -22,4 +22,9 @@
     background-size: cover;
     height: 300px;
   }
+
+  &__title {
+    text-align: center;
+    white-space: nowrap;
+  }
 }

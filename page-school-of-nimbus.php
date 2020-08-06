@@ -41,7 +41,7 @@
       </ul>
     </div>
     <div style="display:grid">
-      <div class="link-list" style="justify-self:center">
+      <div class="link-list">
         <a href="#" class="link-list__link dark">Faculty & Staff <i class="fas fa-chevron-right"></i></a>
         <a href="#" class="link-list__link dark">Dresscode <i class="fas fa-chevron-right"></i></a>
         <a href="#" class="link-list__link dark">Class Schedule <i class="fas fa-chevron-right"></i></a>

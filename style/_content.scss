@@ -33,6 +33,7 @@ a { text-decoration: none; color: black; }
   &.mobile {
     margin: auto;
     display: block;
+    text-align: center;
 
     @include target-device(tablet) { 
       display: inline-block;
@@ -76,7 +77,7 @@ a { text-decoration: none; color: black; }
   text-align: center;
 }
 
-.limit-width { max-width: 700px; }
+.limit-width { max-width: 850px; }
 
 .vertical-margin.vertical-margin {
   margin-top: 3rem;
@@ -229,11 +230,25 @@ a { text-decoration: none; color: black; }
     padding: 2rem;
     position: relative;
 
-    @include target-device(tablet) { padding: 6rem 4rem; }
+    .copy {
+      position: relative;
+      padding-right: 1rem;
+
+      @include target-device(tablet) { 
+        position: absolute;
+        top: 50%;
+        left: 2rem; 
+        transform: translateY(-50%);
+      }
+      @include target-device(desktop) { left: 4rem; }
+    }
 
     .artist {
       position: absolute;
       bottom: 0;
+      left: 2rem;
+      @include target-device(tablet) { left: 2rem; bottom: 1rem; }
+      @include target-device(desktop) { left: 4rem; }
     }
   }
 
@@ -244,6 +259,10 @@ a { text-decoration: none; color: black; }
 }
 
 .link-list {
+  justify-self: left;
+
+  @include target-device(tablet) { justify-self: center; }
+
   &__link {
     display: block;
     color: white;

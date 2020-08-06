@@ -1,6 +1,15 @@
     </main>
     <footer class="footer">
       <div class="site-map">
+        <div class="footer__mobile-links">
+          <?php wp_nav_menu(array( 
+            'theme_location'  => 'footer-menu',
+            'container_class' => 'footer-mobile__menu',
+            'menu_class'      => 'footer-menu__list',
+            'container'       => 'div'
+          )); ?>
+          <hr>
+        </div>
         <div class="footer__links">
           <div class="footer__col">
             <h3>NIMBUS DANCE</h3>

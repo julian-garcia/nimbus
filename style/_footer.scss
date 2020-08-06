@@ -13,8 +13,10 @@ body {
   width: 100%;
   background: $colour-dark;
   color: white;
-  padding: 0 1rem 0;
+  padding: 1rem 1.5rem 0;
   font-size: 15px;
+
+  @include target-device(tablet) { padding: 0 1rem 0; }
 
   h3 {font-size: 15px;}
 
@@ -32,16 +34,48 @@ body {
 
   &__links {
     grid-area: links;
-    display: grid;
+    display: none;
     grid-template-columns: auto;
 
     @include target-device(tablet) {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 1rem;
     }
 
     @include target-device(desktop) {
       grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__mobile-links {
+    display: block;
+    @include target-device(tablet) { display: none; }
+    hr { margin: 3rem 0; }
+  }
+
+  &-menu__list {
+    list-style: none;
+    padding: 0;
+
+    .menu-item {
+      margin: 0 0 1rem;
+      a {
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+
+        &:after {
+          content: '\f054';
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          right: -1rem;
+          bottom: 50%; 
+          transform: translateY(50%);
+          font-size: .9rem;
+        }
+      }
     }
   }
 
@@ -66,11 +100,21 @@ body {
     display: grid;
     grid-template-columns: auto;
     align-items: end;
-    justify-items: end;
+    justify-items: start;
+
+    &>*:nth-child(1) {order: 3}
+    &>*:nth-child(2) {order: 1}
+    &>*:nth-child(3) {order: 2}
 
     @include target-device(tablet) {
       grid-template-columns: 1fr 2fr;
       column-gap: 1rem;
+      justify-items: end;
+
+      &>*:nth-child(1) {order: 1}
+      &>*:nth-child(2) {order: 2}
+      &>*:nth-child(3) {order: 3}
+      &>*:nth-child(4) {order: 4}
     }
 
     @include target-device(desktop) {
@@ -84,13 +128,13 @@ body {
   }
 
   &__address, &__copywrite {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     display: block;
     font-size: 12px;
-    justify-self: center;
-    text-align: center;
+    justify-self: start;
+    text-align: left;
 
-    @include target-device(tablet) { justify-self: end; display: none; }
+    @include target-device(tablet) { justify-self: end; display: none; margin-bottom: 1rem;}
     @include target-device(desktop) { display: block; }
   }
 
