@@ -1,28 +1,28 @@
 const logo = document.querySelector('.logo');
-let logoMaxWidth;
+let logoWidth;
 
-window.addEventListener('DOMContentLoaded', calcLogoMaxWidth);
-window.addEventListener('scroll', calcLogoMaxWidth);
-window.addEventListener('resize', calcLogoMaxWidth);
+window.addEventListener('DOMContentLoaded', calcLogoWidth);
+window.addEventListener('scroll', calcLogoWidth);
+window.addEventListener('resize', calcLogoWidth);
 
 function reduceLogoSize() {
   if (window.pageYOffset > 100) {
-    logo.style.maxWidth = 'calc(' + logoMaxWidth + ' * .5)';
+    logo.style.width = 'calc(' + logoWidth + ' * .5)';
   } else {
-    logo.style.maxWidth = logoMaxWidth;
+    logo.style.width = logoWidth;
   }
 }
 
-function calcLogoMaxWidth() {
+function calcLogoWidth() {
   const tabletMediaQuery = window.matchMedia("(min-width: 700px)");
   const desktopMediaQuery = window.matchMedia("(min-width: 1200px)");
 
   if (desktopMediaQuery.matches) {
-    logoMaxWidth = '230px';
+    logoWidth = '230px';
   } else if (tabletMediaQuery.matches) {
-    logoMaxWidth = '130px';
+    logoWidth = '130px';
   } else {
-    logoMaxWidth = '100px';
+    logoWidth = '100px';
   }
   
   reduceLogoSize();

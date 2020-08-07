@@ -3,9 +3,12 @@
   column-gap: 2rem;
 
   @include target-device(phone) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   @include target-device(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include target-device(tablet-ls) {
     grid-template-columns: repeat(3, 1fr);
   }
   @include target-device(desktop) {
@@ -16,6 +19,7 @@
 
 .dancer {
   margin-bottom: 3rem;
+  min-width: 0;
 
   &__image {
     background-position: center;
@@ -26,5 +30,7 @@
   &__title {
     text-align: center;
     white-space: nowrap;
+
+
   }
 }

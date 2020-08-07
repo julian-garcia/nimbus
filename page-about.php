@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <style>
   .logo {
-    content:url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
+    background-image: url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
   }
 </style>
 <div class="hero-page" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/about.jpg); background-position: top;">

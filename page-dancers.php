@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <style>
   .logo {
-    content:url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
+    background-image: url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
   }
 </style>
 <div class="hero-page half" style="background: black; background-position: top;">
@@ -26,7 +26,7 @@
       $dancers->the_post(); ?>
       <div class="dancer">
         <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)"></div>
-        <h3 class="dancer__title"><?php the_title(); ?> <i class="fas fa-chevron-right"></i></h3>
+        <h3 class="dancer__title"><?php the_title(); ?>&nbsp;<i class="fas fa-chevron-right"></i></h3>
       </div>
       <?php
     } 
@@ -48,7 +48,7 @@
       $dancers->the_post(); ?>
       <div class="dancer">
         <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)"></div>
-        <h3 class="dancer__title"><?php the_title(); ?> <i class="fas fa-chevron-right"></i></h3>
+        <h3 class="dancer__title"><?php the_title(); ?>&nbsp;<i class="fas fa-chevron-right"></i></h3>
       </div>
       <?php
     } 

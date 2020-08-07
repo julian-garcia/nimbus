@@ -1,8 +1,12 @@
 @mixin target-device($device) {
   $phone: 400px;
   $tablet: 700px;
+  $tablet-ls: 900px;
   $desktop: 1200px;
+  $desktop-lg: 1500px;
   @if $device == phone { @media (min-width: $phone) { @content; } }
   @if $device == tablet { @media (min-width: $tablet) { @content; } }
+  @if $device == tablet-ls { @media (min-width: $tablet-ls) { @content; } }
   @if $device == desktop { @media (min-width: $desktop) { @content; } }
+  @if $device == desktop-lg { @media (min-width: $desktop-lg) { @content; } }
 }

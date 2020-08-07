@@ -7,7 +7,7 @@
 </head>
 <body>
   <header class="header">
-    <img class="logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/nimbus.png" alt="">
+    <div class="logo"></div>
     <div class="nav-menu">
       <div class="social-icons">
         <a href="https://www.facebook.com/NimbusDanceWorks" target="_blank" rel="noopener noreferrer">

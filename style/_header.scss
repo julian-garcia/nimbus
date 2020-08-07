@@ -2,16 +2,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 100px;
+  width: 100px;
+  height: 100%;
   z-index: 1;
-  transition: max-width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  background-image: url(../images/nimbus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 
   @include target-device(tablet) {
-    max-width: 130px;
+    width: 130px;
   }
 
   @include target-device(desktop) {
-    max-width: 230px;
+    width: 230px;
   }
 }
 
