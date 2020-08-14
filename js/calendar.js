@@ -75,7 +75,7 @@ function addDayToCalendar(calDay, calMonth, calYear, activeClass) {
 
     if (eventDate.getTime() == calendarDate.getTime()) {
       const calendarDayLink = document.createElement('a');
-      calendarDayLink.textContent = event.title + ' ' + event.time;
+      calendarDayLink.innerHTML = event.title + ' ' + event.time;
       calendarDayLink.href = event.link;
       calendarDay.appendChild(calendarDayLink);
     }

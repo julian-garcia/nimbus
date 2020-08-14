@@ -32,12 +32,24 @@
     row-gap: 1rem;
   }
 
+  &.logos {
+    column-gap: 5rem;
+    row-gap: 2rem;
+    img { max-width: 200px; }
+
+    @include target-device(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+
   &__link { text-align: center; }
   &__image {
     width: 100%;
     .partners & { width: auto; height: 70px; }
   }
-  &__fixed { width: 100%; height: auto; margin: auto; }
+  &__fixed { 
+    width: 100%; height: auto; margin: auto; 
+  }
 }
 
 .thirds-grid {
