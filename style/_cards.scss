@@ -4,9 +4,10 @@
   @include target-device(desktop) { margin-bottom:0; }
 
   &__image {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: top center;
+    height: 200px;
   }
   &__link {
     font-family: bold-font;

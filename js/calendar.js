@@ -134,11 +134,11 @@ function navigateMonths(e) {
   const dtYear = currentMonthEl.getAttribute('data-year');
   const prevNext = e.target.id;
 
-  if (prevNext == 'previousMonth') {
+  if (prevNext == 'previousMonth' || e.target.parentNode.id == 'previousMonth') {
     const dt = new Date(parseInt(dtYear), parseInt(dtMonth) - 1, 1);
     buildCalendar(dt.getMonth(), dt.getFullYear());
     setNavMonths(dt);
-  } else if (prevNext == 'nextMonth') {
+  } else if (prevNext == 'nextMonth' || e.target.parentNode.id == 'nextMonth') {
     const dt = new Date(parseInt(dtYear), parseInt(dtMonth) + 1, 1);
     buildCalendar(dt.getMonth(), dt.getFullYear());
     setNavMonths(dt);

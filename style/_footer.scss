@@ -19,6 +19,7 @@ body {
   @include target-device(tablet) { padding: 0 1rem 0; }
 
   h3 {font-size: 15px;}
+  a { color: white; }
 
   .site-map, &-company {
     display: grid;

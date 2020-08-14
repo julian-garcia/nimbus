@@ -93,11 +93,13 @@
     position: absolute;
     top: 100px;
     left: 50%;
+    width: 80%;
     transform: translate(-50%, -50%);
     font-size: 1.7rem;
     text-align: center;
     
-    @include target-device(tablet) { top: 50%; text-align: left; }
+    @include target-device(phone) { width: 70%; }
+    @include target-device(tablet) { top: 50%; width: unset; text-align: left; }
     @include target-device(desktop) { font-size: 2.3rem; }
 
     &:after {

@@ -74,6 +74,9 @@
   margin: 2rem auto 3rem;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  z-index: 99;
+
   @include target-device(tablet) { margin: 0 auto 2rem; }
 
   #previousMonth, #nextMonth { 
@@ -135,5 +138,12 @@
       margin: 0 0 2rem;
       @include target-device(tablet) { margin: 2rem 0; }
     }
+  }
+}
+
+.event-post {
+  &__image {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }

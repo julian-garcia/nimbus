@@ -25,8 +25,12 @@
     while($dancers->have_posts()) {
       $dancers->the_post(); ?>
       <div class="dancer">
-        <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)"></div>
-        <h3 class="dancer__title"><?php the_title(); ?>&nbsp;<i class="fas fa-chevron-right"></i></h3>
+        <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)">
+          <a class="dancer__link" href="<?php the_permalink(); ?>">
+        </div>
+        <a class="dancer__title" href="<?php the_permalink(); ?>">
+          <?php the_title(); ?>&nbsp;<i class="fas fa-chevron-right"></i>
+        </a>
       </div>
       <?php
     } 
@@ -47,8 +51,12 @@
     while($dancers->have_posts()) {
       $dancers->the_post(); ?>
       <div class="dancer">
-        <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)"></div>
-        <h3 class="dancer__title"><?php the_title(); ?>&nbsp;<i class="fas fa-chevron-right"></i></h3>
+        <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)">
+          <a class="dancer__link" href="<?php the_permalink(); ?>">
+        </div>
+        <a class="dancer__title" href="<?php the_permalink(); ?>">
+          <?php the_title(); ?>&nbsp;<i class="fas fa-chevron-right"></i>
+        </a>
       </div>
       <?php
     } 

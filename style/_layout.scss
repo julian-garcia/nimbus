@@ -55,7 +55,7 @@
 
 .page-content, .shaded {
   &>.centered, &>.upcoming-events,
-  &>h2, &>h3, & .thirds-grid {
+  &>h2, &>h3, & .thirds-grid, &.condensed {
     padding: 0 1rem;
     @include target-device(desktop) { padding: 0; }
   }

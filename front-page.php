@@ -43,7 +43,7 @@
   <h2>Upcoming Events</h2>
   <div class="auto-grid upcoming-events">
     <?php
-      $args = array('post_type' => 'event');
+      $args = array('post_type' => 'event', 'posts_per_page' => '3');
       $posts = new WP_Query($args);
       while($posts->have_posts() ) {
         $posts->the_post(); ?>
@@ -51,7 +51,7 @@
           <div class="card__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>);"></div>
           <h3 class="card__title"><?php the_title(); ?></h3>
           <h4 class="card__date"></h4>
-          <p class="card__text"><?php the_content(); ?></p>
+          <p class="card__text"><?php the_excerpt(); ?></p>
           <a class="card__link" href="<?php the_permalink()?>">Read More <i class="fas fa-chevron-right"></i></a>
         </div>
         <?php
