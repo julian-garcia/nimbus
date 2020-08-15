@@ -97,3 +97,29 @@
     }
   }
 }
+
+.vertical {
+  &-cards {
+    column-gap: 2rem;
+    justify-items: center;
+  }
+
+  &-card {
+    max-width: 600px;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 4rem;
+
+    &__button.button {
+      background: white;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: unset;
+      i { display: inline; margin-left: .5rem; }
+    }
+  }
+}

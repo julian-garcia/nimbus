@@ -78,7 +78,13 @@ p { line-height: 22px; }
   text-align: center;
 }
 
-.limit-width { max-width: 850px; }
+.limit-width { 
+  max-width: 850px; 
+  padding: 0 1rem;
+  @media (min-width: 882px) { 
+    padding: 0;
+  }
+}
 
 .vertical-margin.vertical-margin {
   margin-top: 3rem;
@@ -295,4 +301,23 @@ p { line-height: 22px; }
 .phone {
   display: inherit;  
   @include target-device(tablet) { display: none !important; }
+}
+
+.post {
+  row-gap: 2rem;
+  &-feature-image {
+    width: 100%;
+  }
+  &-text {
+    h3 { margin-top: 0; line-height: 1; }
+  }
+}
+
+.page {
+  figure {
+    width: 100%;
+    img {width: 100%;}
+    @include target-device(phone) { width: unset; }
+  }
+  h3 {clear: both; margin: 2rem 0;}
 }
