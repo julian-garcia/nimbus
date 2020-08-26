@@ -29,6 +29,10 @@ body {
     @include target-device(tablet) {
       padding: 2rem 0 0;
       grid-template-areas: ". links .";
+      grid-template-columns: .5fr 5fr .5fr;
+    }
+
+    @include target-device(desktop) {
       grid-template-columns: 1fr 5fr 1fr;
     }
   }
@@ -90,18 +94,13 @@ body {
 }
 
 .footer-company {
-  margin-top: 0;
-
-  @include target-device(tablet) {
-    margin-top: -2rem;
-  }
-
   &__columns {
     grid-area: links;
     display: grid;
     grid-template-columns: auto;
     align-items: end;
     justify-items: start;
+    margin-top: 0;
 
     &>*:nth-child(1) {order: 3}
     &>*:nth-child(2) {order: 1}
@@ -111,6 +110,7 @@ body {
       grid-template-columns: 1fr 2fr;
       column-gap: 1rem;
       justify-items: end;
+      margin-top: -2rem;
 
       &>*:nth-child(1) {order: 1}
       &>*:nth-child(2) {order: 2}

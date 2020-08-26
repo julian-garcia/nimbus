@@ -13,9 +13,9 @@
       <div class="link-list">
         <p>
           <a href="#" class="link-list__link">Curriculum <i class="fas fa-chevron-right"></i></a>
-          <a href="#" class="link-list__link">Upcoming Events <i class="fas fa-chevron-right"></i></a>
-          <a href="#" class="link-list__link">Calendar <i class="fas fa-chevron-right"></i></a>
-          <a href="#" class="link-list__link">Tuition & Scholarships <i class="fas fa-chevron-right"></i></a>
+          <a href="/events" class="link-list__link">Upcoming Events <i class="fas fa-chevron-right"></i></a>
+          <a href="/events" class="link-list__link">Calendar <i class="fas fa-chevron-right"></i></a>
+          <a href="/outreach/scholarship/pledge/" class="link-list__link">Tuition & Scholarships <i class="fas fa-chevron-right"></i></a>
         </p>
       </div>
     </div>

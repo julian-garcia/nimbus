@@ -50,8 +50,8 @@
 </div>
 <div class="page-content vertical-margin">
   <div class="centered" style="margin:0;">
-    <a href="#" class="button fixed">Artistic Director <i class="fas fa-chevron-right"></i></a>
-    <a href="#" class="button fixed">Staff <i class="fas fa-chevron-right"></i></a>
+    <a href="/founder-artistic-director" class="button fixed">Artistic Director <i class="fas fa-chevron-right"></i></a>
+    <a href="/company/staff-and-board/" class="button fixed">Staff <i class="fas fa-chevron-right"></i></a>
   </div>
   <div class="centered" style="margin:0;">
     <a href="#" class="button fixed">History of Nimbus <i class="fas fa-chevron-right"></i></a>

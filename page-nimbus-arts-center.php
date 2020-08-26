@@ -11,8 +11,8 @@
       <div class="headline__text">
         <?php the_content(); ?>
         <p>
-          <a href="#" class="button">Become A Member <i class="fas fa-chevron-right"></i></a>
-          <a href="#" class="button">Upcoming Events <i class="fas fa-chevron-right"></i></a>
+          <a href="/nimbus-arts-center/become-a-member" class="button">Become A Member <i class="fas fa-chevron-right"></i></a>
+          <a href="/events" class="button">Upcoming Events <i class="fas fa-chevron-right"></i></a>
         </p>
       </div>
     </div>
@@ -21,11 +21,11 @@
 <div class="page-content">
   <h3 class="centered" style="max-width: 700px">Nimbus is proud to partner with the following organizations who present regular and ongoing programs at the Nimbus Arts Center.</h3>
   <div class="auto-grid partners">
-    <a href="https://www.singingwithmolly.com/" class="auto-grid__link" target="_blank" rel="noopener noreferrer">
-      <img class="auto-grid__image" src="<?php echo get_bloginfo('template_directory'); ?>/images/molly.png" alt="">
+    <a href="https://www.luxperformingarts.com/" class="auto-grid__link" target="_blank" rel="noopener noreferrer">
+      <img class="auto-grid__image" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo-lux.png" alt="">
     </a>
-    <a href="https://www.theicmt.com/" class="auto-grid__link" target="_blank" rel="noopener noreferrer">
-      <img class="auto-grid__image" src="<?php echo get_bloginfo('template_directory'); ?>/images/icmt.png" alt="">
+    <a href="https://www.asoundstart.com/" class="auto-grid__link" target="_blank" rel="noopener noreferrer">
+      <img class="auto-grid__image" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo-asoundstart.png" alt="">
     </a>
     <a href="http://segundaquimbamba.org/" class="auto-grid__link" target="_blank" rel="noopener noreferrer">
       <img class="auto-grid__image" src="<?php echo get_bloginfo('template_directory'); ?>/images/sqfc.png" alt="">

@@ -9,7 +9,7 @@
         $index += 1;
         $posts->the_post(); ?>
         <div class="hero-home__slide" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>)" data-slide="<?php echo $index; ?>">
-          <a href="<?php the_permalink()?>" class="hero-home__link"></a>
+          <a href="<?php the_field('link')?>" class="hero-home__link"></a>
           <div>
             <h2 class="hero-home__slide-title"><?php the_title(); ?></h2>
             <button class="button">Read More <i class="fas fa-chevron-right"></i></button>
@@ -67,7 +67,7 @@
       <h2 class="image-box__title">Community Bulletin <i class="fas fa-chevron-right"></i></h2>
     </div>
     <div class="image-box" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/support.png);">
-      <a href="#" class="image-box__link"></a>
+      <a href="/support" class="image-box__link"></a>
       <h2 class="image-box__title">Support <i class="fas fa-chevron-right"></i></h2>
     </div>
   </div>

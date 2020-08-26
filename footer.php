@@ -14,63 +14,71 @@
           <div class="footer__col">
             <h3>NIMBUS DANCE</h3>
             <a class="footer__link" href="#">About</a>
-            <a class="footer__link" href="#">Dancers</a>
-            <a class="footer__link" href="#">Upcoming</a>
-            <a class="footer__link" href="#">Leadership</a>
-            <a class="footer__link" href="#">Press/Presenter Kit</a>
-            <a class="footer__link" href="#">Jersey City Nutcracker</a>
+            <a class="footer__link" href="#">Mission Statement</a>
+            <a class="footer__link" href="#">History of Nimbus</a>
+            <a class="footer__link" href="#">Artistic Director</a>
+            <a class="footer__link" href="#">Staff / Board</a>
+            <a class="footer__link" href="#">Press Kit</a>
             <a class="footer__link" href="#">Auditions</a>
-            <a class="footer__link" href="#">Staff and Board</a>
-            <a class="footer__link" href="#">Sponsors</a>
-            <a class="footer__link" href="#">Touring</a>
-            <a class="footer__link" href="#">Auditions</a>
-            <a class="footer__link" href="#">Quotes/Reviews</a>
+            <a class="footer__link" href="#">Reviews / Quotes</a>
           </div>
           <div class="footer__col">
             <h3>NIMBUS ARTS CENTER</h3>
-            <a class="footer__link" href="#">About</a>
-            <a class="footer__link" href="#">Events</a>
-            <a class="footer__link" href="#">Rentals</a>
+            <a class="footer__link" href="#">Become a member</a>
+            <a class="footer__link" href="#">Upcoming Events</a>
+            <a class="footer__link" href="#">Singing with Molly</a>
+            <a class="footer__link" href="#">OICMT</a>
+            <a class="footer__link" href="#">Segunda Quimbamba</a>
             <a class="footer__link" href="#">Visual Arts Gallery</a>
+            <a class="footer__link" href="#">Theatre</a>
           </div>
           <div class="footer__col">
             <h3>EVENTS</h3>
             <a class="footer__link" href="#">Ticketing Policies</a>
+            <a class="footer__link" href="#">Virtual Grand Opening</a>
             <a class="footer__link" href="#">Musica y Ritmos</a>
             <a class="footer__link" href="#">South Asian Series</a>
           </div>
           <div class="footer__col">
             <h3>SCHOOL OF NIMBUS</h3>
             <a class="footer__link" href="#">About</a>
-            <a class="footer__link" href="#">Classes/Descriptions</a>
-            <a class="footer__link" href="#">Class Schedule</a>
-            <a class="footer__link" href="#">Registration</a>
+            <a class="footer__link" href="#">Curriculum</a>
+            <a class="footer__link" href="#">Upcoming Events</a>
+            <a class="footer__link" href="#">Calendar</a>
             <a class="footer__link" href="#">Scholarships</a>
-            <a class="footer__link" href="#">NYE/Pre-pro</a>
-            <a class="footer__link" href="#">JYE</a>
-            <a class="footer__link" href="#">JC SummerArts</a>
-            <a class="footer__link" href="#">Summer Intensives</a>
-            <a class="footer__link" href="#">NimbusFIT</a>
+            <a class="footer__link" href="#">Tuition & Scholarship</a>
             <a class="footer__link" href="#">Faculty</a>
-            <a class="footer__link" href="#">A Sound Start</a>
+            <a class="footer__link" href="#">Dresscode</a>
+            <a class="footer__link" href="#">Auditions</a>
+            <a class="footer__link" href="#">Class Information</a>
           </div>
           <div class="footer__col">
-            <h3>COMMUNITY / EDUCATIONAL PROGRAMS</h3>
+            <h3>OUTREACH</h3>
+            <a class="footer__link" href="#">Memo</a>
+            <a class="footer__link" href="#">Lynchtown/Thistown</a>
+            <a class="footer__link" href="#">Scholarship Pledge</a>
             <a class="footer__link" href="#">Dance Beyond Horizons</a>
-            <a class="footer__link" href="#">After-school Programs</a>
+            <a class="footer__link" href="#">After School Programs</a>
             <a class="footer__link" href="#">Dance to Learn</a>
+            <a class="footer__link" href="#">JC Grooves</a>
           </div>
           <div class="footer__col">
-            <h3>ACADIA DANCE FESTIVAL</h3>
+            <h3>ACADIA</h3>
             <a class="footer__link" href="#">About</a>
             <a class="footer__link" href="#">Submissions</a>
-            <a class="footer__link" href="#">Acadia Dance Festival Intensive</a>
+            <a class="footer__link" href="#">Acadia Dance Festival</a>
+            <a class="footer__link" href="#">Dance Intensive</a>
             <a class="footer__link" href="#">Partners</a>
             <a class="footer__link" href="#">Committee</a>
-            <h3>DONATE</h3>
-            <a class="footer__link" href="#">General Fund</a>
+            <h3>SUPPORT</h3>
+            <a class="footer__link" href="#">Donate</a>
+            <a class="footer__link" href="#">COVID-19 Fund</a>
             <a class="footer__link" href="#">Scholarship Fund</a>
-            <a class="footer__link" href="#">Capital Campaign</a>
+            <a class="footer__link" href="#">Capitol Campaign</a>
+            <a class="footer__link" href="#">Donor Benefits</a>
+            <a class="footer__link" href="#">Volunteer</a>
+            <a class="footer__link" href="#">In-Kind Donations</a>
+            <a class="footer__link" href="#">Donors</a>
             <div class="social-icons">
               <a href="https://www.facebook.com/NimbusDanceWorks" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-facebook"></i>

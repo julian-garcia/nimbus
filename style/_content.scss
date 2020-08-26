@@ -1,4 +1,4 @@
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-family: bold-font;
 }
 p, li, a, button, span {
@@ -309,9 +309,11 @@ p { line-height: 22px; }
     width: 100%;
   }
   &-text {
-    h3 { margin-top: 0; line-height: 1; }
+    h3, h4 { margin-top: 0; }
   }
 }
+
+.page a, .link { font-weight: bold; text-decoration: underline; }
 
 .page {
   figure {
@@ -319,5 +321,38 @@ p { line-height: 22px; }
     img {width: 100%;}
     @include target-device(phone) { width: unset; }
   }
-  h3 {clear: both; margin: 2rem 0;}
+  h3, h4 {clear: both; margin: 2rem 0;}
+  hr {
+    border: 1px solid $colour-accent-1; 
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  figure {
+    margin: 0;
+  }
+  table {
+    font-family: regular-font;
+    border-collapse: collapse;
+    margin: 1rem 0 1rem;
+
+    td, th {
+      padding: 1rem;
+    }
+    td {
+      border-top: 1px solid $colour-accent-1
+    }
+    tr {
+      &:nth-child(even) {
+        background: rgba($colour-accent-1, .3);
+      }
+      &:nth-child(odd) {
+        background: rgba($colour-accent-1, .1);
+      }
+    }
+    thead {
+      background: $colour-dark;
+      color: white;
+    }
+  }
 }

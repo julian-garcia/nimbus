@@ -42,5 +42,6 @@
       )); ?>
       <h2 class="nav-menu__close">CLOSE</h2>
     </div>
+    <script src="https://api.bloomerang.co/v1/WebsiteVisit?ApiKey=pub_760d4844-4da9-11ea-8134-0ab2f2f28c00" type="text/javascript"></script>
   </header>
   <main class="content">
