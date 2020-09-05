@@ -11,7 +11,7 @@
   <?php endwhile; ?>
 </div>
 <div class="page-content">
-  <h3 class="centered limit-width" style="text-align: left">Nimbus Dance bridges the gap between world-class performances and community engagement by presenting work that challenges, speaks to, and elevates the core beliefs of its diverse audience.</h3>
+  <h3 class="centered limit-width" style="text-align: left">Nimbus Dance bridges world-class performance and community engagement by presenting work that challenges, speaks to, and elevates diverse audiences. Utilizing the distinct and interwoven platforms of professional company, school, Arts Center, and community outreach programming, Nimbus manifests a vision for dance and the arts as a catalyst for equity, community development and transformative cultural exchange.</h3>
   <h3 class="centered regular vertical-margin limit-width" style="text-align: left">Founded in 2005 by Samuel Pott and based in Jersey City, Nimbus has been at the forefront of excellence in the arts, civic engagement, and equitable impact, successfully interweaving its mission between Company, School, and Presenting wings.</h3>
 </div>
 <div class="page-content vertical-margin">
@@ -54,8 +54,8 @@
     <a href="/company/staff-and-board/" class="button fixed">Staff <i class="fas fa-chevron-right"></i></a>
   </div>
   <div class="centered" style="margin:0;">
-    <a href="#" class="button fixed">History of Nimbus <i class="fas fa-chevron-right"></i></a>
-    <a href="#" class="button fixed">Press Kit <i class="fas fa-chevron-right"></i></a>
+    <a href="/nimbus-history" class="button fixed">History of Nimbus <i class="fas fa-chevron-right"></i></a>
+    <a href="/company/press-kit" class="button fixed">Press Kit <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <?php get_footer(); ?>

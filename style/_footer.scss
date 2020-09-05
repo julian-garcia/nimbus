@@ -59,6 +59,11 @@ body {
     hr { margin: 3rem 0; }
   }
 
+  &-desktop-menu__list {
+    list-style: none;
+    padding: 0;
+  }
+
   &-menu__list {
     list-style: none;
     padding: 0;

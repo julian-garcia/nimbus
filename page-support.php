@@ -19,10 +19,10 @@
 <div class="page-content vertical-margin">
   <h3 class="centered">Specify your donation</h3>
   <div class="centered">
-    <a href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_760d4844-4da9-11ea-8134-0ab2f2f28c00&WidgetId=867328" class="button" target="_blank" rel="noopener noreferrer">New Works <i class="fas fa-chevron-right"></i></a>
-    <a href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_760d4844-4da9-11ea-8134-0ab2f2f28c00&WidgetId=872448" class="button" target="_blank" rel="noopener noreferrer">Scholarship <i class="fas fa-chevron-right"></i></a>
-    <a href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_760d4844-4da9-11ea-8134-0ab2f2f28c00&WidgetId=867330" class="button" target="_blank" rel="noopener noreferrer">Nimbus Outreach <i class="fas fa-chevron-right"></i></a>
-    <a href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_760d4844-4da9-11ea-8134-0ab2f2f28c00&WidgetId=39936" class="button" target="_blank" rel="noopener noreferrer">Capital Campaign <i class="fas fa-chevron-right"></i></a>
+    <a href="/support/new-works" class="button">New Works <i class="fas fa-chevron-right"></i></a>
+    <a href="/support/scholarship" class="button">Scholarship <i class="fas fa-chevron-right"></i></a>
+    <a href="/support/nimbus-outreach" class="button">Nimbus Outreach <i class="fas fa-chevron-right"></i></a>
+    <a href="/support/capital-campaign" class="button">Capital Campaign <i class="fas fa-chevron-right"></i></a>
   </div>
 </div>
 <div class="page-content vertical-margin">

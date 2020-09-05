@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<style>
+  .logo {
+    background-image: url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
+  }
+</style>
 <div class="hero-home">
   <div class="hero-home__slider">
     <?php
@@ -33,7 +38,7 @@
       <a href="/nimbus-arts-center" class="hero-home__link"></a>
       <h2 class="hero-home__page-link-title">Nimbus Arts Center<br>At the Lively <i class="fas fa-chevron-right"></i></h2>
     </div>
-    <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/outreach.png); color: white;">
+    <div class="hero-home__page-link dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/outreach.png); background-position:top right; color: white;">
       <a href="/outreach" class="hero-home__link"></a>
       <h2 class="hero-home__page-link-title">Outreach <i class="fas fa-chevron-right"></i></h2>
     </div>

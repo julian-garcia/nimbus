@@ -72,7 +72,13 @@ function register_menus() {
   register_nav_menus(
     array(
       'header-menu' => __( 'Header Menu' ),
-      'footer-menu' => __( 'Footer Menu' )
+      'footer-menu' => __( 'Footer Menu' ),
+      'footer-menu-desktop1' => __( 'Footer Menu 1' ),
+      'footer-menu-desktop2' => __( 'Footer Menu 2' ),
+      'footer-menu-desktop3' => __( 'Footer Menu 3' ),
+      'footer-menu-desktop4' => __( 'Footer Menu 4' ),
+      'footer-menu-desktop5' => __( 'Footer Menu 5' ),
+      'footer-menu-desktop6' => __( 'Footer Menu 6' )
      )
    );
  }

@@ -13,72 +13,63 @@
         <div class="footer__links">
           <div class="footer__col">
             <h3>NIMBUS DANCE</h3>
-            <a class="footer__link" href="#">About</a>
-            <a class="footer__link" href="#">Mission Statement</a>
-            <a class="footer__link" href="#">History of Nimbus</a>
-            <a class="footer__link" href="#">Artistic Director</a>
-            <a class="footer__link" href="#">Staff / Board</a>
-            <a class="footer__link" href="#">Press Kit</a>
-            <a class="footer__link" href="#">Auditions</a>
-            <a class="footer__link" href="#">Reviews / Quotes</a>
+            <?php 
+              wp_nav_menu(array( 
+              'theme_location'  => 'footer-menu-desktop1',
+              'container_class' => 'footer-desktop__menu',
+              'menu_class'      => 'footer-desktop-menu__list',
+              'container'       => 'div'
+            )); ?>
           </div>
           <div class="footer__col">
             <h3>NIMBUS ARTS CENTER</h3>
-            <a class="footer__link" href="#">Become a member</a>
-            <a class="footer__link" href="#">Upcoming Events</a>
-            <a class="footer__link" href="#">Singing with Molly</a>
-            <a class="footer__link" href="#">OICMT</a>
-            <a class="footer__link" href="#">Segunda Quimbamba</a>
-            <a class="footer__link" href="#">Visual Arts Gallery</a>
-            <a class="footer__link" href="#">Theatre</a>
+            <?php 
+              wp_nav_menu(array( 
+              'theme_location'  => 'footer-menu-desktop2',
+              'container_class' => 'footer-desktop__menu',
+              'menu_class'      => 'footer-desktop-menu__list',
+              'container'       => 'div'
+            )); ?>
           </div>
           <div class="footer__col">
             <h3>EVENTS</h3>
-            <a class="footer__link" href="#">Ticketing Policies</a>
-            <a class="footer__link" href="#">Virtual Grand Opening</a>
-            <a class="footer__link" href="#">Musica y Ritmos</a>
-            <a class="footer__link" href="#">South Asian Series</a>
+            <?php 
+              wp_nav_menu(array( 
+              'theme_location'  => 'footer-menu-desktop3',
+              'container_class' => 'footer-desktop__menu',
+              'menu_class'      => 'footer-desktop-menu__list',
+              'container'       => 'div'
+            )); ?>
           </div>
           <div class="footer__col">
             <h3>SCHOOL OF NIMBUS</h3>
-            <a class="footer__link" href="#">About</a>
-            <a class="footer__link" href="#">Curriculum</a>
-            <a class="footer__link" href="#">Upcoming Events</a>
-            <a class="footer__link" href="#">Calendar</a>
-            <a class="footer__link" href="#">Scholarships</a>
-            <a class="footer__link" href="#">Tuition & Scholarship</a>
-            <a class="footer__link" href="#">Faculty</a>
-            <a class="footer__link" href="#">Dresscode</a>
-            <a class="footer__link" href="#">Auditions</a>
-            <a class="footer__link" href="#">Class Information</a>
+            <?php 
+              wp_nav_menu(array( 
+              'theme_location'  => 'footer-menu-desktop4',
+              'container_class' => 'footer-desktop__menu',
+              'menu_class'      => 'footer-desktop-menu__list',
+              'container'       => 'div'
+            )); ?>
           </div>
           <div class="footer__col">
             <h3>OUTREACH</h3>
-            <a class="footer__link" href="#">Memo</a>
-            <a class="footer__link" href="#">Lynchtown/Thistown</a>
-            <a class="footer__link" href="#">Scholarship Pledge</a>
-            <a class="footer__link" href="#">Dance Beyond Horizons</a>
-            <a class="footer__link" href="#">After School Programs</a>
-            <a class="footer__link" href="#">Dance to Learn</a>
-            <a class="footer__link" href="#">JC Grooves</a>
+            <?php 
+              wp_nav_menu(array( 
+              'theme_location'  => 'footer-menu-desktop5',
+              'container_class' => 'footer-desktop__menu',
+              'menu_class'      => 'footer-desktop-menu__list',
+              'container'       => 'div'
+            )); ?>
           </div>
           <div class="footer__col">
-            <h3>ACADIA</h3>
-            <a class="footer__link" href="#">About</a>
-            <a class="footer__link" href="#">Submissions</a>
-            <a class="footer__link" href="#">Acadia Dance Festival</a>
-            <a class="footer__link" href="#">Dance Intensive</a>
-            <a class="footer__link" href="#">Partners</a>
-            <a class="footer__link" href="#">Committee</a>
             <h3>SUPPORT</h3>
-            <a class="footer__link" href="#">Donate</a>
-            <a class="footer__link" href="#">COVID-19 Fund</a>
-            <a class="footer__link" href="#">Scholarship Fund</a>
-            <a class="footer__link" href="#">Capitol Campaign</a>
-            <a class="footer__link" href="#">Donor Benefits</a>
-            <a class="footer__link" href="#">Volunteer</a>
-            <a class="footer__link" href="#">In-Kind Donations</a>
-            <a class="footer__link" href="#">Donors</a>
+            <?php 
+              wp_nav_menu(array( 
+              'theme_location'  => 'footer-menu-desktop6',
+              'container_class' => 'footer-desktop__menu',
+              'menu_class'      => 'footer-desktop-menu__list',
+              'container'       => 'div'
+            )); ?>
             <div class="social-icons">
               <a href="https://www.facebook.com/NimbusDanceWorks" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-facebook"></i>

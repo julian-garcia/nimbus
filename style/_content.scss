@@ -19,6 +19,21 @@ p { line-height: 22px; }
   display: inline-block;
   max-width: 200px;
   margin: .5rem .5rem .5rem 0;
+  a {
+    text-decoration: none;
+    position: relative;
+    padding-right:1rem;
+    &:after {
+      content: '\f054';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 0rem;
+      bottom: 50%; 
+      transform: translateY(50%);
+      font-size: .9rem;
+    }
+  }
 
   &.accent {
     background: $colour-accent-1;
@@ -27,7 +42,7 @@ p { line-height: 22px; }
 
   &.fixed { width: 200px; }
 
-  &.block { display: block; }
+  &.block { display: block; clear: both; }
 
   &.full-width { max-width: unset; }
 
@@ -318,8 +333,8 @@ p { line-height: 22px; }
 .page {
   figure {
     width: 100%;
-    img {width: 100%;}
-    @include target-device(phone) { width: unset; }
+    img {height: auto;}
+    @include target-device(tablet) { width: unset; }
   }
   h3, h4 {clear: both; margin: 2rem 0;}
   hr {
