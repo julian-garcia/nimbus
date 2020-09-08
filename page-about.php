@@ -10,9 +10,10 @@
   <img class="hero-page__bottom" src="<?php echo get_bloginfo('template_directory'); ?>/images/curve.svg" alt="">
   <?php endwhile; ?>
 </div>
-<div class="page-content">
-  <h3 class="centered limit-width" style="text-align: left">Nimbus Dance bridges world-class performance and community engagement by presenting work that challenges, speaks to, and elevates diverse audiences. Utilizing the distinct and interwoven platforms of professional company, school, Arts Center, and community outreach programming, Nimbus manifests a vision for dance and the arts as a catalyst for equity, community development and transformative cultural exchange.</h3>
-  <h3 class="centered regular vertical-margin limit-width" style="text-align: left">Founded in 2005 by Samuel Pott and based in Jersey City, Nimbus has been at the forefront of excellence in the arts, civic engagement, and equitable impact, successfully interweaving its mission between Company, School, and Presenting wings.</h3>
+<div class="page-content limit-width">
+  <h3 class="centered" style="text-align: left">Nimbus Dance bridges world-class performance and community engagement by presenting work that challenges, speaks to, and elevates diverse audiences. Utilizing the distinct and interwoven platforms of professional company, school, Arts Center, and community outreach programming, Nimbus manifests a vision for dance and the arts as a catalyst for equity, community development and transformative cultural exchange.</h3>
+  <h3 class="centered regular vertical-margin" style="text-align: left">Founded in 2005 by Samuel Pott and based in Jersey City, Nimbus has been at the forefront of excellence in the arts, civic engagement, and equitable impact, successfully interweaving its mission between Company, School, and Presenting wings.</h3>
+  <a href="/about-nimbus" class="button mobile">Read more <i class="fas fa-chevron-right"></i></a>
 </div>
 <div class="page-content vertical-margin">
   <div class="auto-grid horizontal-cards flat">
@@ -26,7 +27,7 @@
   <div class="auto-grid horizontal-cards flat re-order">
     <div class="horizontal-card__text text-left">
       <h3>Nimbus’ community engagement initiatives serve over 7,000 children annually through in-school, movement-based programs.</h3>
-      <a href="/outreach" class="button mobile vertical-margin">Community <i class="fas fa-chevron-right"></i></a>
+      <a href="/outreach" class="button mobile vertical-margin">Outreach <i class="fas fa-chevron-right"></i></a>
     </div>
     <div class="horizontal-card__image wave-left wave-turquoise" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/outreach.png);"></div>
   </div>

@@ -15,7 +15,8 @@
   <div class="auto-grid dancers">
   <?php
     $args = array('post_type' => 'dancer', 
-                  'orderby' => 'title', 
+                  'meta_key' => 'surname',
+                  'orderby' => 'meta_value',
                   'order' => 'ASC',
                   'tax_query' => array(array('taxonomy' => 'category', 
                                              'field' => 'slug',             
@@ -44,7 +45,8 @@
   <div class="auto-grid dancers">
   <?php
     $args = array('post_type' => 'dancer', 
-                  'orderby' => 'title', 
+                  'meta_key' => 'surname',
+                  'orderby' => 'meta_value',
                   'order' => 'ASC',
                   'category_name' => 'nimbus2');
     $dancers = new WP_Query($args);

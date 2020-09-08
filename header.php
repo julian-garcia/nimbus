@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.png" />
   <?php wp_head(); ?>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <a href="https://twitter.com/nimbusdance" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="/contact">
           <i class="fas fa-envelope"></i>
         </a>
       </div>

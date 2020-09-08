@@ -80,7 +80,7 @@
               <a href="https://twitter.com/nimbusdance" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="/contact">
                 <i class="fas fa-envelope"></i>
               </a>
             </div>

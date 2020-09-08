@@ -12,10 +12,9 @@
       <?php the_content(); ?>
       <div class="link-list">
         <p>
-          <a href="#" class="link-list__link">Curriculum <i class="fas fa-chevron-right"></i></a>
-          <a href="/events" class="link-list__link">Upcoming Events <i class="fas fa-chevron-right"></i></a>
+          <a href="https://schoolofnimbus.org/openhouse" class="link-list__link" target="_blank" rel="noopener noreferrer">Upcoming Events <i class="fas fa-chevron-right"></i></a>
           <a href="/events" class="link-list__link">Calendar <i class="fas fa-chevron-right"></i></a>
-          <a href="/outreach/scholarship/pledge/" class="link-list__link">Tuition & Scholarships <i class="fas fa-chevron-right"></i></a>
+          <a href="https://schoolofnimbus.org/pricing" class="link-list__link" target="_blank" rel="noopener noreferrer">Tuition & Scholarships <i class="fas fa-chevron-right"></i></a>
         </p>
       </div>
     </div>
@@ -42,11 +41,11 @@
     </div>
     <div style="display:grid">
       <div class="link-list">
-        <a href="#" class="link-list__link dark">Faculty & Staff <i class="fas fa-chevron-right"></i></a>
-        <a href="#" class="link-list__link dark">Dresscode <i class="fas fa-chevron-right"></i></a>
-        <a href="#" class="link-list__link dark">Class Schedule <i class="fas fa-chevron-right"></i></a>
-        <a href="#" class="link-list__link dark">Auditions <i class="fas fa-chevron-right"></i></a>
-        <a href="#" class="link-list__link dark">Class Information <i class="fas fa-chevron-right"></i></a>
+        <a href="https://schoolofnimbus.org/teacher-bio" class="link-list__link dark" target="_blank" rel="noopener noreferrer">Faculty & Staff <i class="fas fa-chevron-right"></i></a>
+        <a href="https://schoolofnimbus.org/uniform-dresscode" class="link-list__link dark" target="_blank" rel="noopener noreferrer">Uniform & Dresscode <i class="fas fa-chevron-right"></i></a>
+        <a href="https://schoolofnimbus.org/class-schedule" class="link-list__link dark" target="_blank" rel="noopener noreferrer">Class Schedule <i class="fas fa-chevron-right"></i></a>
+        <a href="https://schoolofnimbus.org/preprofessional" class="link-list__link dark" target="_blank" rel="noopener noreferrer">Nimbus Youth Ensemble <i class="fas fa-chevron-right"></i></a>
+        <a href="https://schoolofnimbus.org/junior-youth-ensemble" class="link-list__link dark" target="_blank" rel="noopener noreferrer">Junior Youth Ensemble <i class="fas fa-chevron-right"></i></a>
       </div>
     </div>
   </div>

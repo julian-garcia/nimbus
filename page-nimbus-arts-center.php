@@ -36,7 +36,7 @@
   <div class="auto-grid">
     <div class="image-slider" style="min-height: 500px;">
       <?php
-        $args = array('post_type' => 'post', 'category_name' => 'gallery');
+        $args = array('post_type' => 'post', 'category_name' => 'visual-arts');
         $posts = new WP_Query($args);
         $index = 0;
         while($posts->have_posts() ) {
@@ -51,7 +51,8 @@
     <div class="shaded__text">
       <div class="copy">
         <h3>The Nimbus Arts Center houses lobby gallery spaces bathed in natural light through 30’ floor to ceiling windows and featuring spacious contemporary industrial exhibition spaces.  Please stay tuned for information on exhibitions and visual arts programming.</h3>
-        <a href="#" class="button full-width">Visit the Visual Arts Gallery <i class="fas fa-chevron-right"></i></a>
+        <!-- <a href="#" class="button full-width">Visit the Visual Arts Gallery <i class="fas fa-chevron-right"></i></a> -->
+        <h3>Visual Arts Gallery Coming Soon...</h3>
       </div>
       <p class="artist">Artist: Meredith Lippman</p>
     </div>

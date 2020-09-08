@@ -68,7 +68,7 @@
   </a>
   <div class="auto-grid image-boxes">
     <div class="image-box dark" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/bulletin.png);">
-      <a href="#" class="image-box__link"></a>
+      <a href="/events" class="image-box__link"></a>
       <h2 class="image-box__title">Community Bulletin <i class="fas fa-chevron-right"></i></h2>
     </div>
     <div class="image-box" style="background-image: url(<?php echo get_bloginfo('template_directory'); ?>/images/support.png);">
