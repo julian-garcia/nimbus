@@ -361,6 +361,60 @@ p { line-height: 22px; }
   figure {
     margin: 0;
   }
+
+  table, thead, tbody, td, tr { 
+    display: block; 
+  }
+
+  table { 
+    @include target-device(tablet) { display: table; }
+  }
+  thead {
+    @include target-device(tablet) { display: table-header-group; }
+  }
+  tbody {
+    @include target-device(tablet) { display: table-row-group; }
+  }
+  tr {
+    @include target-device(tablet) { display: table-row; }
+  }
+  td {
+    @include target-device(tablet) { display: table-cell; }
+  }
+  th {
+    display: none;
+    @include target-device(tablet) { display: table-cell; }
+  }
+
+  .table {
+    &-inner {
+      td:nth-of-type(1):before { content: "Membership Level: "; font-weight: bold; }
+      td:nth-of-type(2):before { content: "Benefits: "; font-weight: bold; }
+      @include target-device(tablet) { 
+        td:nth-of-type(1):before, 
+        td:nth-of-type(2):before { content: ''; } 
+      }
+    }
+    &-director {
+      td:nth-of-type(1):before { content: "Exclusive Membership: "; font-weight: bold; }
+      td:nth-of-type(2):before { content: "Individual & Board Benefits: "; font-weight: bold; }
+      @include target-device(tablet) { 
+        td:nth-of-type(1):before, 
+        td:nth-of-type(2):before { content: ''; } 
+      }
+    }
+    &-leader {
+      td:nth-of-type(1):before { content: "Membership Level: "; font-weight: bold; }
+      td:nth-of-type(2):before { content: "Benefits: "; font-weight: bold; }
+      td:nth-of-type(3):before { content: "Nimbus Partner Benefits: "; font-weight: bold; }
+      @include target-device(tablet) { 
+        td:nth-of-type(1):before, 
+        td:nth-of-type(2):before, 
+        td:nth-of-type(3):before { content: ''; } 
+      }
+    }
+  }
+
   table {
     font-family: regular-font;
     border-collapse: collapse;

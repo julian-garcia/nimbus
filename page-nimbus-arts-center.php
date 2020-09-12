@@ -64,7 +64,8 @@
     <div class="horizontal-card__image"></div>
     <div class="horizontal-card__text dark">
       <h3>The theatre and studios are available for rental.</h3>
-      <p>For more information, contact Haejin at:<br>production@nimbusdanceworks.org</p>
+      <p>For more information, contact Justin at:<br>
+      <a style="color: white" href="mailto:Justin@nimbusdanceworks.org">Justin@nimbusdanceworks.org</a></p>
     </div>
   </div>
 </div>
