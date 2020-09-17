@@ -1,1 +1,3 @@
 node_modules
+user-manual/docs/.vuepress/dist
+user-manual/deploy.sh

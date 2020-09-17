@@ -59,5 +59,4 @@
     ?>
   </div>
 </div>
-<a href="/donors" class="button centered vertical-margin block">View Donors <i class="fas fa-chevron-right"></i></a>
 <?php get_footer(); ?>
