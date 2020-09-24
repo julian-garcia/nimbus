@@ -18,3 +18,11 @@ To add pages, you can use the standard process which is documented by WordPress 
 ## Adding a page to a menu
 
 To add a new page to any of the menus, following the process for [adding menu items](../menus/#changing-menu-items).
+
+## Changing the logo colour
+
+By default, the logo colour is green. If you want the logo in a different colour for a specific page, you can choose another image. Go to the editor for the relevant page, then on the right sidebar click "Add image" under the "Logo" section. 
+
+<img src="../images/logo-colour.png" alt="Logo" width="200" />
+
+Please note, the image you use should be in "png" format and should be the vertical Nimbus logo with a transparent background and the text in any colour. If you don't choose an image, the default green logo is used.

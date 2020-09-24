@@ -18,6 +18,15 @@
   <meta name="twitter:image" content="<?php echo get_bloginfo('template_directory'); ?>/images/nimbus.png">
   <link rel="icon" type="image/x-icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.png" />
   <?php wp_head(); ?>
+  <?php if (get_field('logo_image')) { ?>
+    <style>
+      .logo { background-image: url("<?php the_field('logo_image')?>"); }
+    </style>
+  <?php } else { ?>
+    <style>
+      .logo { background-image: url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg"); }
+    </style>
+  <?php } ?>
 </head>
 <body>
   <header class="header">

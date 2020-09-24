@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-<style>
-  .logo {
-    background-image: url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
-  }
-</style>
 <div class="hero-home">
   <div class="hero-home__slider">
     <?php

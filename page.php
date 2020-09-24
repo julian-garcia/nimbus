@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-<style>
-  .logo {
-    background-image: url("<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-green.svg");
-  }
-</style>
 <?php if (get_the_post_thumbnail_url(get_the_ID())): ?>
 <div class="hero-page" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>); background-position: top;">
   <?php while(have_posts()): the_post(); ?>
