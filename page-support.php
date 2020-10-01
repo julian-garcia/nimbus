@@ -5,27 +5,40 @@
   <img class="hero-page__bottom" src="<?php echo get_bloginfo('template_directory'); ?>/images/curve.svg" alt="">
   <?php endwhile; ?>
 </div>
-<div class="page-content full-width">
-  <h3 class="centered limit-width">Nimbus Dance gratefully acknowledges the generosity of contributors to our organization.</h3>
-  <h3 class="centered regular vertical-margin limit-width">The support of individuals, corporations, foundations, and government agencies makes possible the artistic and community vision of Nimbus Dance.</h3>
-  <h3 class="centered regular vertical-margin limit-width">Become a part of the Nimbus family and join our CLOUD of supporters.</h3>
+<div class="page-content vertical-margin centered limit-width">
+  <?php echo the_field('acknowledgement'); ?>
   <a href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_760d4844-4da9-11ea-8134-0ab2f2f28c00&WidgetId=867329" class="button centered vertical-margin accent block" target="_blank" rel="noopener noreferrer">Donate Now <i class="fas fa-chevron-right"></i></a>
 </div>
 <div class="page-content vertical-margin">
   <h3 class="centered">Specify your donation</h3>
   <div class="centered">
-    <a href="/support/new-works" class="button">New Works <i class="fas fa-chevron-right"></i></a>
-    <a href="/support/scholarship" class="button">Scholarship <i class="fas fa-chevron-right"></i></a>
-    <a href="/support/nimbus-outreach" class="button">Nimbus Outreach <i class="fas fa-chevron-right"></i></a>
-    <a href="/support/capital-campaign" class="button">Capital Campaign <i class="fas fa-chevron-right"></i></a>
+    <?php
+      $links = get_field('donation_links');
+      if( $links ): ?>
+      <a href="<?php echo $links['link_1']['link']; ?>" class="button"><?php echo $links['link_1']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+      <a href="<?php echo $links['link_2']['link']; ?>" class="button"><?php echo $links['link_2']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+      <a href="<?php echo $links['link_3']['link']; ?>" class="button"><?php echo $links['link_3']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+      <a href="<?php echo $links['link_4']['link']; ?>" class="button"><?php echo $links['link_4']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+    <?php endif; ?>
   </div>
 </div>
 <div class="page-content vertical-margin">
   <h3 class="centered">Other ways to get involved</h3>
   <div class="centered">
-    <a href="/support/volunteer" class="button">Volunteer <i class="fas fa-chevron-right"></i></a>
-    <a href="/support/in-kind-donations" class="button">In-Kind Donations <i class="fas fa-chevron-right"></i></a>
-    <a href="/nimbus-arts-center/become-a-member" class="button">Become a Member <i class="fas fa-chevron-right"></i></a>
+    <?php
+      $links = get_field('get_involved_links');
+      if( $links ): ?>
+      <a href="<?php echo $links['link_1']['link']; ?>" class="button"><?php echo $links['link_1']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+      <?php if( $links['link_2']['link'] ): ?>
+      <a href="<?php echo $links['link_2']['link']; ?>" class="button"><?php echo $links['link_2']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+      <?php endif; ?>
+      <?php if( $links['link_3']['link'] ): ?>
+      <a href="<?php echo $links['link_3']['link']; ?>" class="button"><?php echo $links['link_3']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+      <?php endif; ?>
+      <?php if( $links['link_4']['link'] ): ?>
+      <a href="<?php echo $links['link_4']['link']; ?>" class="button"><?php echo $links['link_4']['text']; ?> <i class="fas fa-chevron-right"></i></a>
+      <?php endif; ?>
+    <?php endif; ?>
   </div>
 </div>
 <div class="page-content vertical-margin">
@@ -33,9 +46,8 @@
   <p class="centered vertical-margin" style="max-width:500px">To speak with Nimbus staff about making a gift of appreciated securities or to include Nimbus in planned giving, contact: <br>Derick McKoy Jr. at <a class="link" href="mailto:development@nimbusdanceworks.org">development@nimbusdanceworks.org</a></p>
 </div>
 <img class="centered vertical-margin" src="<?php echo get_bloginfo('template_directory'); ?>/images/separator.svg" alt="">
-<div class="page-content vertical-margin">
-  <h3 class="centered">Thank you to our corporate sponsors</h3>
-  <p class="centered limit-width">LMC, A Lennar Company, Mack-Cali Realty Corporation, Base Fitness, Hopkins Group LLC, The Geraldine R. Dodge Foundation, Dance/NYC Dance Advancement Fund, Dvora, New Music USA, Goldman Sachs, US Trust/Bank of America, CoolVines, SILVERMAN, Dance New Jersey, Hudson County Office of Cultural Affairs, the City of Jersey City,  NJ Department of State, Division of Travel and Tourism and by funds from the New Jersey State Council on the Arts, a partner agency of the National Endowment for the Arts, and by generous donors and sponsors. Thank you!</p>
+<div class="page-content vertical-margin centered limit-width">
+  <?php echo the_field('sponsor_thanks'); ?>
 </div>
 <div class="page-content  vertical-margin">
   <div class="auto-grid logos" style="padding: 0 1rem">
