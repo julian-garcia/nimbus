@@ -12,7 +12,7 @@
     "jsminify": "terser js/slider.js js/logo.js js/calendar.js js/video.js js/menu.js --compress --mangle --ecma 2016 --output js/main.min.js",
     "theme-zip": "node package-theme.js"
   },
-  "author": "",
+  "author": "Julian Garcia <julian.garcia.leoni@gmail.com> (https://julian-garcia.uk)",
   "license": "ISC",
   "devDependencies": {
     "archiver": "^5.0.2",

@@ -55,6 +55,9 @@
       font-size: 12px;
       text-decoration: underline;
       font-weight: bold;
+      position: relative;
+      z-index: 2;
+      
       @include target-device(desktop) { font-size: 1rem; }
     }
   }
