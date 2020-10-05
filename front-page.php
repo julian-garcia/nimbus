@@ -43,10 +43,19 @@
   <h2>Upcoming Events</h2>
   <div class="auto-grid upcoming-events">
     <?php
-      $args = array('post_type' => 'event', 'posts_per_page' => '3');
+      $args = array(
+        'post_type'     => 'event',
+        'posts_per_page'=> -1,
+        'meta_key'      => 'start_date',
+        'orderby'       => 'meta_value',
+        'order'         => 'DESC'
+      );
+
       $posts = new WP_Query($args);
+      $i = 1;
       while($posts->have_posts() ) {
-        $posts->the_post(); ?>
+        $posts->the_post(); 
+        if (get_field('feature_home_page', get_the_ID()) && $i <= 3) { $i++; ?>
         <div class="card">
           <div class="card__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>);"></div>
           <h3 class="card__title"><?php the_title(); ?></h3>
@@ -55,6 +64,7 @@
           <a class="card__link" href="<?php the_permalink()?>">Read More <i class="fas fa-chevron-right"></i></a>
         </div>
         <?php
+        }
       }
     ?>
   </div>
