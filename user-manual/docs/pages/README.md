@@ -1,20 +1,18 @@
 # Pages
 
+Text content and links on [the support page](https://www.nimbusdance.org/support/) and [school of Nimbus page](https://www.nimbusdance.org/school-of-nimbus/) can be changed using custom fields. Simply open the page editor for those pages and edit the relevant content:
+
+<img src="./support.png" alt="Logo" width="400" />
+
 The following pages cannot currently be changed by a Wordpress admin due to their highly customised and unique styling. Any changes to these need to be requested through a developer for now. In future, this will be changed so that content is editable within WordPress.
 
 - [Home](https://www.nimbusdance.org/) 
 - [About](https://www.nimbusdance.org/about/)
 - [Nimbus Arts Center](https://www.nimbusdance.org/nimbus-arts-center/)
-- [School of Nimbus](https://www.nimbusdance.org/school-of-nimbus/)
 - [Outreach](https://www.nimbusdance.org/outreach/)
 
-## Support Page
-Text content and links on [the support page](https://www.nimbusdance.org/support/) can be changed using custom fields. Simply open the support page and edit the relevant content:
-
-<img src="./support.png" alt="Logo" width="400" />
-
 ## Other pages
-All other pages can be added/edited/deleted easily via WordPress using the process below.
+All pages except for the pages listed above can be added/edited/deleted easily via WordPress using the standard WordPress procedure, detailed below.
 
 ### Creating & editing
 
