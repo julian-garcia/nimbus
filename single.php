@@ -7,7 +7,7 @@
 </div>
 <div class="page-content limit-width">
   <?php while(have_posts()): the_post(); ?>
-    <div class="auto-grid thirds-grid one-two post">
+    <div class="post">
       <img class="post-feature-image" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="">
       <div class="post-text">
         <?php the_content(); ?>

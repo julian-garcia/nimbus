@@ -87,6 +87,23 @@
           </div>
         </div>
       </div>
+      <div class="website-credits">
+        <div class="authors">
+          <p>Julian Garcia, Frontend&nbsp;Web&nbsp;Developer
+            <a href="https://julian-garcia.uk" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-link"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/juliangarcialeoni/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </p>
+          <p>Christine Lhowe, Art director, designer,&nbsp;and&nbsp;educator
+            <a href="https://christinelhowe.com" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-link"></i>
+            </a>
+          </p>
+        </div>
+      </div>
       <div class="footer-company">
         <div class="footer-company__columns">
           <img class="footer-company__logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/nimbus-white.png" alt="">

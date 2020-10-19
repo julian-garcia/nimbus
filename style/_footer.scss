@@ -149,7 +149,34 @@ body {
     text-align: right;
     font-size: 12px;
 
+    p { margin-bottom: 0; }
+
     @include target-device(tablet) { display: block; }
     @include target-device(desktop) { display: none; }
+  }
+}
+
+.website-credits {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "authors";
+  margin: 0 0 2rem;
+
+  .authors {
+    grid-area: authors;
+    text-align: center;
+
+    p { margin: 0; }
+  }
+
+  @include target-device(tablet) {
+    margin: 2rem 0 1rem;
+    grid-template-areas: ". authors .";
+    grid-template-columns: .5fr 5fr .5fr;
+  }
+
+  @include target-device(desktop) {
+    margin: 0;
+    grid-template-columns: 1fr 5fr 1fr;
   }
 }

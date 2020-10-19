@@ -321,9 +321,22 @@ p { line-height: 22px; }
 
 .post {
   row-gap: 2rem;
+  margin-top: 2rem;
+
+  @include target-device(desktop) { margin-top: 0; }
+
   &-feature-image {
     width: 100%;
+    max-width: 425px;
+    margin: 0 0 2rem;
+    clear: both;
+
+    @include target-device(tablet) {
+      float: left;
+      margin: 0 1rem .5rem 0;
+    }
   }
+
   &-text {
     h3, h4 { margin-top: 0; }
   }
