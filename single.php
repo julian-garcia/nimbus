@@ -8,7 +8,9 @@
 <div class="page-content limit-width">
   <?php while(have_posts()): the_post(); ?>
     <div class="post">
+      <?php if(get_the_post_thumbnail_url(get_the_ID())) { ?>
       <img class="post-feature-image" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="">
+      <?php } ?>
       <div class="post-text">
         <?php the_content(); ?>
       </div>

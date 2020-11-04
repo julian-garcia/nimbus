@@ -33,10 +33,10 @@
     <div class="logo"></div>
     <div class="nav-menu">
       <div class="social-icons">
-        <a href="https://www.facebook.com/NimbusDanceWorks" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/NimbusDance" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/nimbusdanceworks/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/nimbusdance" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-instagram-square"></i>
         </a>
         <a href="https://twitter.com/nimbusdance" target="_blank" rel="noopener noreferrer">
