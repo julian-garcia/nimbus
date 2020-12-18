@@ -3,7 +3,10 @@
 
   @include target-device(tablet) {
     column-gap: 6rem;
-    .card { position: relative; }
+    .card { 
+      position: relative; 
+      text-align: center;
+    }
 
     &>.card:nth-child(1)::after,
     &>.card:nth-child(2)::after {

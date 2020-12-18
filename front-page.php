@@ -40,6 +40,7 @@
   </div>
 </div>
 <div class="page-content move-down">
+  <!-- <a href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_760d4844-4da9-11ea-8134-0ab2f2f28c00&amp;WidgetId=867329" class="button centered accent block" target="_blank" rel="noopener noreferrer">Donate Now <i class="fas fa-chevron-right"></i></a> -->
   <h2>Upcoming Events</h2>
   <div class="auto-grid upcoming-events">
     <?php
