@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "terser": "^4.8.0"
+    "terser": "^4.8.1"
   }
 }
