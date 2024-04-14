@@ -48,7 +48,7 @@
     while($dancers->have_posts()) {
       $dancers->the_post(); ?>
       <div class="dancer">
-        <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)">
+        <div class="dancer__image" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(),'thumbnail'); ?>)">
           <a class="dancer__link" href="<?php the_permalink(); ?>">
         </div>
         <a class="dancer__title" href="<?php the_permalink(); ?>">

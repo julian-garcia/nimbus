@@ -10,7 +10,7 @@
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch",
     "jsminify": "terser js/slider.js js/logo.js js/calendar.js js/video.js js/menu.js --compress --mangle --ecma 2016 --output js/main.min.js",
-    "theme-zip": "node package-theme.js"
+    "theme-zip": "npm run css-build && npm run jsminify && node package-theme.js"
   },
   "author": "Julian Garcia <julian.garcia.leoni@gmail.com> (https://julian-garcia.uk)",
   "license": "ISC",

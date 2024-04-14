@@ -1,10 +1,7 @@
 @import './variables',
-        '../vendor/fontawesome/scss/fontawesome.scss',
-        '../vendor/fontawesome/scss/brands.scss',
-        '../vendor/fontawesome/scss/solid.scss',
+        './fonts',
         './normalise',
         './mixins',
-        './fonts',
         './layout',
         './header',
         './footer',
@@ -14,4 +11,7 @@
         './cards',
         './forms',
         './dancers',
-        './events';
+        './events',
+        '../vendor/fontawesome/scss/fontawesome.scss',
+        '../vendor/fontawesome/scss/brands.scss',
+        '../vendor/fontawesome/scss/solid.scss';
